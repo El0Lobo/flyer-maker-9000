@@ -157,7 +157,7 @@ jQuery(document).ready(function ($) {
     },
     portrait: {
       demoTitle: {
-        left: 2160 / 2, 
+        left: 2160 / 2,
         top: 50,
         fontSize: 520,
         strokeWidth: 2,
@@ -202,7 +202,7 @@ jQuery(document).ready(function ($) {
         maxWidth: 1000,
       },
       demoStreet: {
-        left: 2160 / 2, 
+        left: 2160 / 2,
         top: 4350,
         fontSize: 250,
         strokeWidth: 1.5,
@@ -211,7 +211,7 @@ jQuery(document).ready(function ($) {
         maxWidth: 2160 - 200,
       },
       demoPlace: {
-        left: 2160 / 2, 
+        left: 2160 / 2,
         top: 4080,
         fontSize: 300,
         strokeWidth: 1.5,
@@ -286,14 +286,13 @@ jQuery(document).ready(function ($) {
         maxWidth: 3840 - 200,
       },
       bandLogo: {
-        left: 3300, 
+        left: 3300,
         top: 1100,
         maxWidth: 1500,
         maxHeight: 1500,
       },
     },
   };
-  
 
   /****************************************
    * Canvas Transformations (Zoom & Pan)
@@ -645,168 +644,185 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  document.getElementById("add-event-details").addEventListener("click", function () {
-    const activeSection = document.querySelector(".form-section:not([style*='display: none'])");
-    let details = {};
-  
-    if (activeSection.classList.contains("Demo")) {
-      details = {
-        title: activeSection.querySelector("#demo-title")?.value || "",
-        description: activeSection.querySelector("#demo-description")?.value || "",
-        date: activeSection.querySelector("#demo-date")?.value || "",
-        time: activeSection.querySelector("#demo-time")?.value || "",
-        start: activeSection.querySelector("#demo-start")?.value || "",
-        place: activeSection.querySelector("#demo-place")?.value || "",
-        street:
-          activeSection.querySelector("#event-place")?.dataset.selectedAddress ||
-          activeSection.querySelector("#event-place")?.value ||
-          "",
-        image: activeSection.querySelector("#demo-image-upload")?.files[0] || null,
-      };
-    }
-    console.log("Collected Demo Details:", details);
-  
-    const currentMode = document.querySelector(".canvas-symbol-active")?.dataset.id || "Instapost";
-    const settings = modeSettings[currentMode];
-  
-    const formatDateToGerman = (dateString) => {
-      if (!dateString) return "";
-      const [year, month, day] = dateString.split("-");
-      return `${day}.${month}.${year}`;
-    };
-  
-    if (details.date) {
-      details.date = formatDateToGerman(details.date);
-    }
-  
-    const addText = (txt, opts) => {
-      if (!txt || !opts) return;
-      const sideMargin = 50; // fixed margin for print safety
-      const canvasWidth = canvas.getWidth();
-      const usableWidth = canvasWidth - 2 * sideMargin;
-  
-      // Limit the textbox width to the usable area.
-      const textBox = new fabric.Textbox(txt, {
-        left: opts.left, // temporary value, will be re-adjusted below
-        top: opts.top,
-        width: Math.min(opts.maxWidth || 1080, usableWidth),
-        fontSize: opts.fontSize || 80,
-        fill: "#FFFFFF",
-        fontFamily: document.getElementById("font-picker")?.value || "Arial",
-        stroke: document.getElementById("apply-outline").checked
-          ? document.getElementById("text-outline-picker")?.value
-          : null,
-        strokeWidth: document.getElementById("apply-outline").checked
-          ? parseFloat(document.getElementById("outline-size-slider")?.value)
-          : 0,
-        shadow: document.getElementById("apply-glow").checked
-          ? new fabric.Shadow({
-              color: document.getElementById("text-glow-picker")?.value,
-              blur: parseFloat(document.getElementById("glow-size-slider")?.value),
-            })
-          : null,
-        lineHeight: 0.8,
-        textAlign: opts.textAlign || "left",
-      });
-  
-      // Adjust left positioning using the safe margins:
-      if (opts.textAlign === "center") {
-        // Center the text within the entire canvas.
-        textBox.set({ left: canvasWidth / 2 - textBox.width / 2 });
-      } else if (opts.textAlign === "right") {
-        // For right alignment, opts.left represents the gap from the right edge.
-        textBox.set({ left: canvasWidth - opts.left - textBox.width });
-      } else {
-        // For left alignment, ensure a minimum gap from the left edge.
-        textBox.set({ left: Math.max(opts.left, sideMargin) });
+  document
+    .getElementById("add-event-details")
+    .addEventListener("click", function () {
+      const activeSection = document.querySelector(
+        ".form-section:not([style*='display: none'])"
+      );
+      let details = {};
+
+      if (activeSection.classList.contains("Demo")) {
+        details = {
+          title: activeSection.querySelector("#demo-title")?.value || "",
+          description:
+            activeSection.querySelector("#demo-description")?.value || "",
+          date: activeSection.querySelector("#demo-date")?.value || "",
+          time: activeSection.querySelector("#demo-time")?.value || "",
+          start: activeSection.querySelector("#demo-start")?.value || "",
+          place: activeSection.querySelector("#demo-place")?.value || "",
+          street:
+            activeSection.querySelector("#event-place")?.dataset
+              .selectedAddress ||
+            activeSection.querySelector("#event-place")?.value ||
+            "",
+          image:
+            activeSection.querySelector("#demo-image-upload")?.files[0] || null,
+        };
       }
-      
-      canvas.add(textBox);
-    };
-  
-    const addImage = (file, opts) => {
-      if (!opts || !file) return;
-      const sideMargin = 50; // fixed margin for print safety
-      const canvasWidth = canvas.getWidth();
-      const usableWidth = canvasWidth - 2 * sideMargin;
-  
-      const reader = new FileReader();
-      reader.onload = function (e) {
-        fabric.Image.fromURL(e.target.result, function (img) {
-          const originalWidth = img.width;
-          const originalHeight = img.height;
-          let newWidth, newHeight;
-          const aspectRatio = originalWidth / originalHeight;
-  
-          if (originalWidth > originalHeight) {
-            if (opts.maxWidth) {
-              // Ensure the new width does not exceed the usable width.
-              newWidth = Math.min(opts.maxWidth, usableWidth);
-              newHeight = newWidth / aspectRatio;
-            }
-          } else if (originalHeight > originalWidth) {
-            if (opts.maxHeight) {
-              newHeight = opts.maxHeight;
-              newWidth = newHeight * aspectRatio;
-              newWidth = Math.min(newWidth, usableWidth);
-            }
-          } else {
-            if (opts.maxWidth && opts.maxHeight) {
-              const minSize = Math.min(opts.maxWidth, opts.maxHeight, usableWidth);
-              newWidth = minSize;
-              newHeight = minSize;
-            }
-          }
-  
-          // Position the image ensuring the left margin is maintained.
-          img.set({
-            left: Math.max(opts.left, sideMargin),
-            top: opts.top,
-            width: newWidth,
-            height: newHeight,
-          });
-          canvas.add(img);
-          canvas.sendToBack(img);
+      console.log("Collected Demo Details:", details);
+
+      const currentMode =
+        document.querySelector(".canvas-symbol-active")?.dataset.id ||
+        "Instapost";
+      const settings = modeSettings[currentMode];
+
+      const formatDateToGerman = (dateString) => {
+        if (!dateString) return "";
+        const [year, month, day] = dateString.split("-");
+        return `${day}.${month}.${year}`;
+      };
+
+      if (details.date) {
+        details.date = formatDateToGerman(details.date);
+      }
+
+      const addText = (txt, opts) => {
+        if (!txt || !opts) return;
+        const sideMargin = 50; // fixed margin for print safety
+        const canvasWidth = canvas.getWidth();
+        const usableWidth = canvasWidth - 2 * sideMargin;
+
+        // Limit the textbox width to the usable area.
+        const textBox = new fabric.Textbox(txt, {
+          left: opts.left, // temporary value, will be re-adjusted below
+          top: opts.top,
+          width: Math.min(opts.maxWidth || 1080, usableWidth),
+          fontSize: opts.fontSize || 80,
+          fill: "#FFFFFF",
+          fontFamily: document.getElementById("font-picker")?.value || "Arial",
+          stroke: document.getElementById("apply-outline").checked
+            ? document.getElementById("text-outline-picker")?.value
+            : null,
+          strokeWidth: document.getElementById("apply-outline").checked
+            ? parseFloat(document.getElementById("outline-size-slider")?.value)
+            : 0,
+          shadow: document.getElementById("apply-glow").checked
+            ? new fabric.Shadow({
+                color: document.getElementById("text-glow-picker")?.value,
+                blur: parseFloat(
+                  document.getElementById("glow-size-slider")?.value
+                ),
+              })
+            : null,
+          lineHeight: 0.8,
+          textAlign: opts.textAlign || "left",
         });
+
+        // Adjust left positioning using the safe margins:
+        if (opts.textAlign === "center") {
+          // Center the text within the entire canvas.
+          textBox.set({ left: canvasWidth / 2 - textBox.width / 2 });
+        } else if (opts.textAlign === "right") {
+          // For right alignment, opts.left represents the gap from the right edge.
+          textBox.set({ left: canvasWidth - opts.left - textBox.width });
+        } else {
+          // For left alignment, ensure a minimum gap from the left edge.
+          textBox.set({ left: Math.max(opts.left, sideMargin) });
+        }
+
+        canvas.add(textBox);
       };
-      reader.readAsDataURL(file);
-    };
-  
-    // Format street address without printing "undefined" for missing parts.
-    if (details.street) {
-      const addressParts = details.street.split(", ");
-      let formattedAddress;
-      if (addressParts.length >= 4) {
-        const firstLine = [addressParts[0], addressParts[1]]
-          .filter(part => part && part.trim())
-          .join(" ");
-        const secondLine = [addressParts[4], addressParts[3]]
-          .filter(part => part && part.trim())
-          .join(" ") + (addressParts[2] && addressParts[2].trim() ? "-" + addressParts[2] : "");
-        formattedAddress = firstLine + "\n" + secondLine;
-      } else {
-        formattedAddress = details.street.replace(/, /g, "\n");
+
+      const addImage = (file, opts) => {
+        if (!opts || !file) return;
+        const sideMargin = 50; // fixed margin for print safety
+        const canvasWidth = canvas.getWidth();
+        const usableWidth = canvasWidth - 2 * sideMargin;
+
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          fabric.Image.fromURL(e.target.result, function (img) {
+            const originalWidth = img.width;
+            const originalHeight = img.height;
+            let newWidth, newHeight;
+            const aspectRatio = originalWidth / originalHeight;
+
+            if (originalWidth > originalHeight) {
+              if (opts.maxWidth) {
+                // Ensure the new width does not exceed the usable width.
+                newWidth = Math.min(opts.maxWidth, usableWidth);
+                newHeight = newWidth / aspectRatio;
+              }
+            } else if (originalHeight > originalWidth) {
+              if (opts.maxHeight) {
+                newHeight = opts.maxHeight;
+                newWidth = newHeight * aspectRatio;
+                newWidth = Math.min(newWidth, usableWidth);
+              }
+            } else {
+              if (opts.maxWidth && opts.maxHeight) {
+                const minSize = Math.min(
+                  opts.maxWidth,
+                  opts.maxHeight,
+                  usableWidth
+                );
+                newWidth = minSize;
+                newHeight = minSize;
+              }
+            }
+
+            // Position the image ensuring the left margin is maintained.
+            img.set({
+              left: Math.max(opts.left, sideMargin),
+              top: opts.top,
+              width: newWidth,
+              height: newHeight,
+            });
+            canvas.add(img);
+            canvas.sendToBack(img);
+          });
+        };
+        reader.readAsDataURL(file);
+      };
+
+      // Format street address without printing "undefined" for missing parts.
+      if (details.street) {
+        const addressParts = details.street.split(", ");
+        let formattedAddress;
+        if (addressParts.length >= 4) {
+          const firstLine = [addressParts[0], addressParts[1]]
+            .filter((part) => part && part.trim())
+            .join(" ");
+          const secondLine =
+            [addressParts[4], addressParts[3]]
+              .filter((part) => part && part.trim())
+              .join(" ") +
+            (addressParts[2] && addressParts[2].trim()
+              ? "-" + addressParts[2]
+              : "");
+          formattedAddress = firstLine + "\n" + secondLine;
+        } else {
+          formattedAddress = details.street.replace(/, /g, "\n");
+        }
+        console.log("Formatted Address for Canvas:", formattedAddress);
+        addText(formattedAddress, settings.demoStreet);
       }
-      console.log("Formatted Address for Canvas:", formattedAddress);
-      addText(formattedAddress, settings.demoStreet);
-    }
-    if (details.place) {
-      addText(details.place, settings.demoPlace);
-    }
-    if (details.image && settings.bandLogo) {
-      addImage(details.image, settings.bandLogo);
-    }
-    if (details.title) addText(details.title, settings.demoTitle);
-    if (details.description) addText(details.description, settings.demoDescription);
-    if (details.date) addText(details.date, settings.demoDate);
-    if (details.time) addText(`Meetup: ${details.time}`, settings.demoTime);
-    if (details.start) addText(`Start: ${details.start}`, settings.demoStart);
-  
-    canvas.renderAll();
-  });
-  
-  
-  
+      if (details.place) {
+        addText(details.place, settings.demoPlace);
+      }
+      if (details.image && settings.bandLogo) {
+        addImage(details.image, settings.bandLogo);
+      }
+      if (details.title) addText(details.title, settings.demoTitle);
+      if (details.description)
+        addText(details.description, settings.demoDescription);
+      if (details.date) addText(details.date, settings.demoDate);
+      if (details.time) addText(`Meetup: ${details.time}`, settings.demoTime);
+      if (details.start) addText(`Start: ${details.start}`, settings.demoStart);
+
+      canvas.renderAll();
+    });
 
   /****************************************
    * Load Regular Fonts from JSON
@@ -824,16 +840,22 @@ jQuery(document).ready(function ($) {
         const standardGroup2 = $('<optgroup label="Standards"></optgroup>');
         data.Standards.root.forEach((fontEntry) => {
           if (fontEntry.name && fontEntry.file) {
-            styleElement.sheet.insertRule(`
+            styleElement.sheet.insertRule(
+              `
               @font-face {
                 font-family: '${fontEntry.name}';
                 src: url('${fontEntry.file}') format('truetype');
               }
-            `, styleElement.sheet.cssRules.length);
+            `,
+              styleElement.sheet.cssRules.length
+            );
             const optionHTML = `<option value="${fontEntry.name}" style="font-family:'${fontEntry.name}', sans-serif;">${fontEntry.name}</option>`;
             standardGroup1.append(optionHTML);
             standardGroup2.append(optionHTML);
-            const font = new FontFace(fontEntry.name, `url('${fontEntry.file}')`);
+            const font = new FontFace(
+              fontEntry.name,
+              `url('${fontEntry.file}')`
+            );
             fontPromises.push(font.load());
             document.fonts.add(font);
           }
@@ -851,16 +873,22 @@ jQuery(document).ready(function ($) {
           const group2 = $(`<optgroup label="${category}"></optgroup>`);
           data[category].root.forEach((fontEntry) => {
             if (fontEntry.name && fontEntry.file) {
-              styleElement.sheet.insertRule(`
+              styleElement.sheet.insertRule(
+                `
                 @font-face {
                   font-family: '${fontEntry.name}';
                   src: url('${fontEntry.file}') format('truetype');
                 }
-              `, styleElement.sheet.cssRules.length);
+              `,
+                styleElement.sheet.cssRules.length
+              );
               const optionHTML = `<option value="${fontEntry.name}" style="font-family:'${fontEntry.name}', sans-serif;">${fontEntry.name}</option>`;
               group1.append(optionHTML);
               group2.append(optionHTML);
-              const font = new FontFace(fontEntry.name, `url('${fontEntry.file}')`);
+              const font = new FontFace(
+                fontEntry.name,
+                `url('${fontEntry.file}')`
+              );
               fontPromises.push(font.load());
               document.fonts.add(font);
             }
@@ -874,8 +902,16 @@ jQuery(document).ready(function ($) {
       const regularGroup1 = $('<optgroup label="Regular Fonts"></optgroup>');
       const regularGroup2 = $('<optgroup label="Regular Fonts"></optgroup>');
       const regularFonts = [
-        "Arial", "Verdana", "Times New Roman", "Georgia", "Courier New",
-        "Tahoma", "Trebuchet MS", "Lucida Console", "Impact", "Comic Sans MS",
+        "Arial",
+        "Verdana",
+        "Times New Roman",
+        "Georgia",
+        "Courier New",
+        "Tahoma",
+        "Trebuchet MS",
+        "Lucida Console",
+        "Impact",
+        "Comic Sans MS",
       ];
       regularFonts.forEach((font) => {
         const optionHTML = `<option value="${font}" style="font-family:'${font}', sans-serif;">${font}</option>`;
@@ -961,7 +997,8 @@ jQuery(document).ready(function ($) {
     const selectedObjects = e.selected || [];
     if (
       selectedObjects.length === 1 &&
-      (selectedObjects[0].type === "textbox" || selectedObjects[0].type === "text")
+      (selectedObjects[0].type === "textbox" ||
+        selectedObjects[0].type === "text")
     ) {
       showEditIcon(selectedObjects[0]);
     } else {
@@ -975,7 +1012,10 @@ jQuery(document).ready(function ($) {
 
   editIcon.addEventListener("click", function () {
     const activeObject = canvas.getActiveObject();
-    if (activeObject && (activeObject.type === "textbox" || activeObject.type === "text")) {
+    if (
+      activeObject &&
+      (activeObject.type === "textbox" || activeObject.type === "text")
+    ) {
       const originalText = activeObject.text;
       const textarea = document.createElement("textarea");
       textarea.value = originalText;
@@ -1017,7 +1057,10 @@ jQuery(document).ready(function ($) {
 
   canvas.on("object:selected", function () {
     const activeObject = canvas.getActiveObject();
-    if (activeObject && (activeObject.type === "textbox" || activeObject.type === "text")) {
+    if (
+      activeObject &&
+      (activeObject.type === "textbox" || activeObject.type === "text")
+    ) {
       showEditIcon(activeObject);
     }
   });
@@ -1198,21 +1241,30 @@ jQuery(document).ready(function ($) {
   sizeSlider.addEventListener("input", updateBrushSettings);
   toggleDrawing.addEventListener("click", function () {
     canvas.isDrawingMode = !canvas.isDrawingMode;
-    toggleDrawing.textContent = canvas.isDrawingMode ? "Stop drawing" : "Start drawing";
+    toggleDrawing.textContent = canvas.isDrawingMode
+      ? "Stop drawing"
+      : "Start drawing";
   });
 
   /****************************************
    * Save and Load User Placements
    ****************************************/
   const saveUserPlacements = () => {
-    const currentMode = document.querySelector(".canvas-symbol-active")?.dataset.id || "Instapost";
+    const currentMode =
+      document.querySelector(".canvas-symbol-active")?.dataset.id ||
+      "Instapost";
     let elements = {};
     const canvasBg = {
       type: canvas.backgroundImage ? "image" : "color",
-      value: canvas.backgroundImage ? canvas.backgroundImage._element?.src : canvas.backgroundColor,
+      value: canvas.backgroundImage
+        ? canvas.backgroundImage._element?.src
+        : canvas.backgroundColor || "#000000",
     };
     canvas.getObjects().forEach((obj) => {
-      let elementName = obj.text || obj._element?.alt || `Element_${Object.keys(elements).length + 1}`;
+      let elementName =
+        obj.text ||
+        obj._element?.alt ||
+        `Element_${Object.keys(elements).length + 1}`;
       elements[elementName] = {
         type: obj.type,
         left: obj.left,
@@ -1237,7 +1289,11 @@ jQuery(document).ready(function ($) {
         elements[elementName].src = obj._element?.src;
       }
     });
-    const jsonData = JSON.stringify({ mode: currentMode, background: canvasBg, elements }, null, 2);
+    const jsonData = JSON.stringify(
+      { mode: currentMode, background: canvasBg, elements },
+      null,
+      2
+    );
     const blob = new Blob([jsonData], { type: "application/json" });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
@@ -1250,13 +1306,25 @@ jQuery(document).ready(function ($) {
     reader.onload = function (e) {
       const data = JSON.parse(e.target.result);
       canvas.clear();
-      if (data.background?.type === "image") {
-        fabric.Image.fromURL(data.background.value, function (img) {
-          canvas.setBackgroundImage(img, canvas.renderAll.bind(canvas));
+
+      // Load background image, scaling it to fill the canvas
+      const loadBgImage = (url) => {
+        fabric.Image.fromURL(url, function (img) {
+          canvas.setBackgroundImage(img, canvas.renderAll.bind(canvas), {
+            scaleX: canvas.getWidth() / img.width,
+            scaleY: canvas.getHeight() / img.height,
+          });
         });
+      };
+
+      if (data.background?.type === "image") {
+        loadBgImage(data.background.value);
       } else {
-        canvas.setBackgroundColor(data.background?.value || "#000000", canvas.renderAll.bind(canvas));
+        // Use default background image "universal3.jpg" if the user didn't change it.
+        loadBgImage("universal3.jpg");
       }
+
+      // Load and add each element (text or image)
       Object.entries(data.elements).forEach(([name, obj]) => {
         if (obj.type === "text") {
           const textEl = new fabric.Text(obj.text, {
@@ -1266,12 +1334,21 @@ jQuery(document).ready(function ($) {
             fontFamily: obj.fontFamily || "Arial",
             stroke: obj.strokeColor !== "none" ? obj.strokeColor : null,
             strokeWidth: obj.strokeWidth || 0,
-            shadow: obj.shadowBlur > 0
-              ? new fabric.Shadow({ blur: obj.shadowBlur, color: obj.shadowColor })
-              : null,
+            shadow:
+              obj.shadowBlur > 0
+                ? new fabric.Shadow({
+                    blur: obj.shadowBlur,
+                    color: obj.shadowColor,
+                  })
+                : null,
             fill: obj.fill || "#FFFFFF",
           });
-          textEl.set({ name });
+          // Apply saved scale values for text
+          textEl.set({
+            name,
+            scaleX: obj.scaleX || 1,
+            scaleY: obj.scaleY || 1,
+          });
           canvas.add(textEl);
         } else if (obj.type === "image") {
           fabric.Image.fromURL(obj.src, function (img) {
@@ -1292,13 +1369,89 @@ jQuery(document).ready(function ($) {
     reader.readAsText(file);
   };
 
-  document.getElementById("import-placements").addEventListener("change", function (event) {
-    const file = event.target.files[0];
-    if (file) {
-      loadUserPlacements(file);
-    }
-  });
-  document.getElementById("save-placements").addEventListener("click", saveUserPlacements);
+  const loadStandardPlacements = () => {
+    fetch("standard.json")
+      .then((response) => response.json())
+      .then((data) => {
+        canvas.clear();
+
+        // Helper: load and scale background image to fill the canvas.
+        const loadBgImage = (url) => {
+          fabric.Image.fromURL(url, function (img) {
+            canvas.setBackgroundImage(img, canvas.renderAll.bind(canvas), {
+              scaleX: canvas.getWidth() / img.width,
+              scaleY: canvas.getHeight() / img.height,
+            });
+          });
+        };
+
+        if (data.background?.type === "image") {
+          loadBgImage(data.background.value);
+        } else {
+          // Use default background image "universal3.jpg" if not provided.
+          loadBgImage("universal3.jpg");
+        }
+
+        // Load and add each element from standard.json
+        Object.entries(data.elements).forEach(([name, obj]) => {
+          if (obj.type === "text") {
+            const textEl = new fabric.Text(obj.text, {
+              left: obj.left,
+              top: obj.top,
+              fontSize: obj.fontSize,
+              fontFamily: obj.fontFamily || "Arial",
+              stroke: obj.strokeColor !== "none" ? obj.strokeColor : null,
+              strokeWidth: obj.strokeWidth || 0,
+              shadow:
+                obj.shadowBlur > 0
+                  ? new fabric.Shadow({
+                      blur: obj.shadowBlur,
+                      color: obj.shadowColor,
+                    })
+                  : null,
+              fill: obj.fill || "#FFFFFF",
+            });
+            textEl.set({
+              name,
+              scaleX: obj.scaleX || 1,
+              scaleY: obj.scaleY || 1,
+            });
+            canvas.add(textEl);
+          } else if (obj.type === "image") {
+            fabric.Image.fromURL(obj.src, function (img) {
+              img.set({
+                left: obj.left,
+                top: obj.top,
+                scaleX: obj.scaleX,
+                scaleY: obj.scaleY,
+              });
+              img.set({ name });
+              canvas.add(img);
+            });
+          }
+        });
+        canvas.renderAll();
+        console.log("Standard placements imported!");
+      })
+      .catch((error) => {
+        console.error("Error loading standard placements:", error);
+      });
+  };
+
+  document
+    .getElementById("import-placements")
+    .addEventListener("change", function (event) {
+      const file = event.target.files[0];
+      if (file) {
+        loadUserPlacements(file);
+      }
+    });
+  document
+    .getElementById("save-placements")
+    .addEventListener("click", saveUserPlacements);
+
+  // Load standard placements on page load
+  window.addEventListener("load", loadStandardPlacements);
 
   /****************************************
    * Additional UI Interactions (Modals, Address Suggestions, Mode Selector)
@@ -1345,11 +1498,15 @@ jQuery(document).ready(function ($) {
       suggestionBox.innerHTML = "";
       return;
     }
-    fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&addressdetails=1&limit=5`)
-      .then(response => response.json())
-      .then(data => {
+    fetch(
+      `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
+        query
+      )}&addressdetails=1&limit=5`
+    )
+      .then((response) => response.json())
+      .then((data) => {
         suggestionBox.innerHTML = "";
-        data.forEach(place => {
+        data.forEach((place) => {
           let li = document.createElement("li");
           const address = place.address;
           const formattedAddress = [
@@ -1372,7 +1529,7 @@ jQuery(document).ready(function ($) {
           suggestionBox.appendChild(li);
         });
       })
-      .catch(error => console.error("Error fetching location data:", error));
+      .catch((error) => console.error("Error fetching location data:", error));
   });
   document.addEventListener("click", function (e) {
     if (!addressInput.contains(e.target) && !suggestionBox.contains(e.target)) {
@@ -1381,16 +1538,16 @@ jQuery(document).ready(function ($) {
   });
 
   // Mode Selector for Text Sections
-  $('#text-selector').on('change', function () {
+  $("#text-selector").on("change", function () {
     const selectedMode = $(this).val();
-    console.log('Selected Mode:', selectedMode);
-    $('.form-section').hide();
+    console.log("Selected Mode:", selectedMode);
+    $(".form-section").hide();
     $(`.form-section.${selectedMode}`).show();
-    if (selectedMode === 'Menu') {
-      $('.canvas-symbol[data-id="landscape"]').trigger('click');
-      console.log('Landscape canvas-symbol clicked');
+    if (selectedMode === "Menu") {
+      $('.canvas-symbol[data-id="landscape"]').trigger("click");
+      console.log("Landscape canvas-symbol clicked");
     }
   });
-  $('#text-selector').trigger('change');
-  console.log('Initial mode triggered');
+  $("#text-selector").trigger("change");
+  console.log("Initial mode triggered");
 });

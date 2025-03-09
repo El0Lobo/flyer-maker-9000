@@ -99,7 +99,9 @@
 
   "Standards": { 
     "root": [
-      { "name": "Chalkboy", "file": "material/fonts/Standards/Chalkboy.ttf" }  
+      { "name": "Chalkboy", "file": "material/fonts/Standards/Chalkboy.ttf" } 
+      ,{ "name": "EdoSz", "file": "material/fonts/Standards/edosz.ttf" }
+      ,{ "name": "Gloss And Bloom", "file": "material/fonts/Standards/Gloss_And_Bloom.ttf" }
       ,{ "name": "Achilles", "file": "material/fonts/Standards/Achilles.otf" } 
       ,{ "name": "across the lines", "file": "material/fonts/Standards/across%the%lines.ttf" } 
       ,{ "name": "Anarchaos", "file": "material/fonts/Standards/Anarchaos.otf" } 
