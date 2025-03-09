@@ -25,6 +25,7 @@
       ,{ "name": "omas gegen facists", "file": "material/images/Assets/omas gegen facists.png" } 
       ,{ "name": "red fist", "file": "material/images/Assets/red fist.png" } 
       ,{ "name": "skate 2", "file": "material/images/Assets/skate 2.png" } 
+      ,{ "name": "flyer", "file": "material/images/Assets/flyer.png" }
     ] 
   }, 
   "Backgrounds": { 
