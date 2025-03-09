@@ -1,0 +1,4 @@
+to do:
+import system fonts (probably not possible in browser)
+add controls to each line text size, position
+save standards should save each value like text size and positionmaybe also save the paths of the last used assets

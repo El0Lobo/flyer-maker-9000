@@ -1,0 +1,138 @@
+{
+  "Assets": { 
+    "root": [ 
+      { "name": "beer", "file": "material/images/Assets/beer.png" } 
+      ,{ "name": "hate facism ", "file": "material/images/Assets/hate facism .png" } 
+      ,{ "name": "hate facism 1", "file": "material/images/Assets/hate facism 1.png" } 
+      ,{ "name": "hate facism 2", "file": "material/images/Assets/hate facism 2.png" } 
+      ,{ "name": "hate facism chalk", "file": "material/images/Assets/hate facism chalk.png" } 
+      ,{ "name": "no facist_", "file": "material/images/Assets/no facist_.png" } 
+      ,{ "name": "Title", "file": "material/images/Assets/Title.png" } 
+    ] 
+  }, 
+  "Backgrounds": { 
+    "insta": [ 
+      { "name": "image", "file": "material/images/Backgrounds/insta/image.png" } 
+      ,{ "name": "spieleabend_hg", "file": "material/images/Backgrounds/insta/spieleabend_hg.jpg" } 
+      ,{ "name": "Untitled-1_0000_Layer-9", "file": "material/images/Backgrounds/insta/Untitled-1_0000_Layer-9.png" } 
+      ,{ "name": "Untitled-1_0001_Layer-8", "file": "material/images/Backgrounds/insta/Untitled-1_0001_Layer-8.png" } 
+      ,{ "name": "Untitled-1_0002_Layer-7", "file": "material/images/Backgrounds/insta/Untitled-1_0002_Layer-7.png" } 
+      ,{ "name": "Untitled-1_0003_Layer-6", "file": "material/images/Backgrounds/insta/Untitled-1_0003_Layer-6.png" } 
+      ,{ "name": "Untitled-1_0004_Layer-5", "file": "material/images/Backgrounds/insta/Untitled-1_0004_Layer-5.png" } 
+      ,{ "name": "Untitled-1_0005_Layer-4", "file": "material/images/Backgrounds/insta/Untitled-1_0005_Layer-4.png" } 
+      ,{ "name": "Untitled-1_0006_Layer-3", "file": "material/images/Backgrounds/insta/Untitled-1_0006_Layer-3.png" } 
+      ,{ "name": "Untitled-1_0007_Layer-2", "file": "material/images/Backgrounds/insta/Untitled-1_0007_Layer-2.png" } 
+      ,{ "name": "Untitled-1_0008_Layer-1", "file": "material/images/Backgrounds/insta/Untitled-1_0008_Layer-1.png" } 
+      ,{ "name": "Untitled-1_0009_SCREEN~1", "file": "material/images/Backgrounds/insta/Untitled-1_0009_SCREEN~1.png" } 
+    ] 
+, 
+    "landscape": [ 
+      { "name": "background", "file": "material/images/Backgrounds/landscape/background.png" } 
+      ,{ "name": "background1", "file": "material/images/Backgrounds/landscape/background1.png" } 
+      ,{ "name": "background2", "file": "material/images/Backgrounds/landscape/background2.png" } 
+      ,{ "name": "chalk", "file": "material/images/Backgrounds/landscape/chalk.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-20 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-czeh9hq1z06e1.png width 3840&format png&auto webp&s 8b5cf114594160cba983c6acbfb2fe92d0455370", "file": "material/images/Backgrounds/landscape/Screenshot 2024-12-12 at 17-43-20 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-czeh9hq1z06e1.png width 3840&format png&auto webp&s 8b5cf114594160cba983c6acbfb2fe92d0455370.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-23 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-bt653d72z06e1.png width 3840&format png&auto webp&s 18824bb6bfae2b3c5da88e50bca19768568b0c7d", "file": "material/images/Backgrounds/landscape/Screenshot 2024-12-12 at 17-43-23 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-bt653d72z06e1.png width 3840&format png&auto webp&s 18824bb6bfae2b3c5da88e50bca19768568b0c7d.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-27 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-kjhzxcf2z06e1.png width 3840&format png&auto webp&s 188da3ad4fa7cc7aae4a6389b22ddda089f14c22", "file": "material/images/Backgrounds/landscape/Screenshot 2024-12-12 at 17-43-27 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-kjhzxcf2z06e1.png width 3840&format png&auto webp&s 188da3ad4fa7cc7aae4a6389b22ddda089f14c22.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-30 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-cg26aps2z06e1.png width 3840&format png&auto webp&s 248f469f9810fcfdfafb3787cb1f5ab7929c08de", "file": "material/images/Backgrounds/landscape/Screenshot 2024-12-12 at 17-43-30 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-cg26aps2z06e1.png width 3840&format png&auto webp&s 248f469f9810fcfdfafb3787cb1f5ab7929c08de.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-34 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-2qulsh43z06e1.png width 3840&format png&auto webp&s b98d5c6096224bed98b674fe05813bfc6dec8069", "file": "material/images/Backgrounds/landscape/Screenshot 2024-12-12 at 17-43-34 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-2qulsh43z06e1.png width 3840&format png&auto webp&s b98d5c6096224bed98b674fe05813bfc6dec8069.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-38 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-dv51fek3z06e1.png width 3840&format png&auto webp&s 11516b8aad0dbba5bf8c7ad9403bb813382e7d9c", "file": "material/images/Backgrounds/landscape/Screenshot 2024-12-12 at 17-43-38 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-dv51fek3z06e1.png width 3840&format png&auto webp&s 11516b8aad0dbba5bf8c7ad9403bb813382e7d9c.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-42 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-le02q104z06e1.png width 3840&format png&auto webp&s c496c4e385aa6b0502fd56b7e6a3a0f9c5e2fd38", "file": "material/images/Backgrounds/landscape/Screenshot 2024-12-12 at 17-43-42 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-le02q104z06e1.png width 3840&format png&auto webp&s c496c4e385aa6b0502fd56b7e6a3a0f9c5e2fd38.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-46 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-4x84wcl4z06e1.png width 3840&format png&auto webp&s 97258aad3ea47ad41a34efe32a7c9786fa5b47f9", "file": "material/images/Backgrounds/landscape/Screenshot 2024-12-12 at 17-43-46 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-4x84wcl4z06e1.png width 3840&format png&auto webp&s 97258aad3ea47ad41a34efe32a7c9786fa5b47f9.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-49 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-j7ghfe65z06e1.png width 3840&format png&auto webp&s 8be3e3880bf821877ef37b7f017099ec49151aaf", "file": "material/images/Backgrounds/landscape/Screenshot 2024-12-12 at 17-43-49 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-j7ghfe65z06e1.png width 3840&format png&auto webp&s 8be3e3880bf821877ef37b7f017099ec49151aaf.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-52 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-x8fhmsl5z06e1.png width 3840&format png&auto webp&s f187ca5cf64aec33d2e98c98c486865bd652cba0", "file": "material/images/Backgrounds/landscape/Screenshot 2024-12-12 at 17-43-52 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-x8fhmsl5z06e1.png width 3840&format png&auto webp&s f187ca5cf64aec33d2e98c98c486865bd652cba0.png" } 
+    ] 
+, 
+    "portrait": [ 
+      { "name": "background", "file": "material/images/Backgrounds/portrait/background.png" } 
+      ,{ "name": "background2", "file": "material/images/Backgrounds/portrait/background2.png" } 
+      ,{ "name": "chalk", "file": "material/images/Backgrounds/portrait/chalk.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-20 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-czeh9hq1z06e1.png width 3840&format png&auto webp&s 8b5cf114594160cba983c6acbfb2fe92d0455370", "file": "material/images/Backgrounds/portrait/Screenshot 2024-12-12 at 17-43-20 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-czeh9hq1z06e1.png width 3840&format png&auto webp&s 8b5cf114594160cba983c6acbfb2fe92d0455370.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-23 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-bt653d72z06e1.png width 3840&format png&auto webp&s 18824bb6bfae2b3c5da88e50bca19768568b0c7d", "file": "material/images/Backgrounds/portrait/Screenshot 2024-12-12 at 17-43-23 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-bt653d72z06e1.png width 3840&format png&auto webp&s 18824bb6bfae2b3c5da88e50bca19768568b0c7d.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-27 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-kjhzxcf2z06e1.png width 3840&format png&auto webp&s 188da3ad4fa7cc7aae4a6389b22ddda089f14c22", "file": "material/images/Backgrounds/portrait/Screenshot 2024-12-12 at 17-43-27 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-kjhzxcf2z06e1.png width 3840&format png&auto webp&s 188da3ad4fa7cc7aae4a6389b22ddda089f14c22.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-30 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-cg26aps2z06e1.png width 3840&format png&auto webp&s 248f469f9810fcfdfafb3787cb1f5ab7929c08de", "file": "material/images/Backgrounds/portrait/Screenshot 2024-12-12 at 17-43-30 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-cg26aps2z06e1.png width 3840&format png&auto webp&s 248f469f9810fcfdfafb3787cb1f5ab7929c08de.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-34 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-2qulsh43z06e1.png width 3840&format png&auto webp&s b98d5c6096224bed98b674fe05813bfc6dec8069", "file": "material/images/Backgrounds/portrait/Screenshot 2024-12-12 at 17-43-34 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-2qulsh43z06e1.png width 3840&format png&auto webp&s b98d5c6096224bed98b674fe05813bfc6dec8069.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-38 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-dv51fek3z06e1.png width 3840&format png&auto webp&s 11516b8aad0dbba5bf8c7ad9403bb813382e7d9c", "file": "material/images/Backgrounds/portrait/Screenshot 2024-12-12 at 17-43-38 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-dv51fek3z06e1.png width 3840&format png&auto webp&s 11516b8aad0dbba5bf8c7ad9403bb813382e7d9c.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-42 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-le02q104z06e1.png width 3840&format png&auto webp&s c496c4e385aa6b0502fd56b7e6a3a0f9c5e2fd38", "file": "material/images/Backgrounds/portrait/Screenshot 2024-12-12 at 17-43-42 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-le02q104z06e1.png width 3840&format png&auto webp&s c496c4e385aa6b0502fd56b7e6a3a0f9c5e2fd38.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-46 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-4x84wcl4z06e1.png width 3840&format png&auto webp&s 97258aad3ea47ad41a34efe32a7c9786fa5b47f9", "file": "material/images/Backgrounds/portrait/Screenshot 2024-12-12 at 17-43-46 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-4x84wcl4z06e1.png width 3840&format png&auto webp&s 97258aad3ea47ad41a34efe32a7c9786fa5b47f9.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-49 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-j7ghfe65z06e1.png width 3840&format png&auto webp&s 8be3e3880bf821877ef37b7f017099ec49151aaf", "file": "material/images/Backgrounds/portrait/Screenshot 2024-12-12 at 17-43-49 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-j7ghfe65z06e1.png width 3840&format png&auto webp&s 8be3e3880bf821877ef37b7f017099ec49151aaf.png" } 
+      ,{ "name": "Screenshot 2024-12-12 at 17-43-52 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-x8fhmsl5z06e1.png width 3840&format png&auto webp&s f187ca5cf64aec33d2e98c98c486865bd652cba0", "file": "material/images/Backgrounds/portrait/Screenshot 2024-12-12 at 17-43-52 Reddit - https __preview.redd.it_abstract-wallpapers-3840x2160-v0-x8fhmsl5z06e1.png width 3840&format png&auto webp&s f187ca5cf64aec33d2e98c98c486865bd652cba0.png" } 
+    ] 
+, 
+    "universal": [ 
+      { "name": "background", "file": "material/images/Backgrounds/universal/background.png" } 
+      ,{ "name": "background2", "file": "material/images/Backgrounds/universal/background2.png" } 
+      ,{ "name": "chalk", "file": "material/images/Backgrounds/universal/chalk.png" } 
+    ] 
+, 
+    "root": [ 
+    ] 
+  }, 
+  "Logos": { 
+    "Logo": [ 
+      { "name": "classic tagline upscaled", "file": "material/images/Logos/Logo/classic tagline upscaled.png" } 
+      ,{ "name": "fish black thin", "file": "material/images/Logos/Logo/fish black thin.png" } 
+      ,{ "name": "fish black", "file": "material/images/Logos/Logo/fish black.png" } 
+      ,{ "name": "fish color", "file": "material/images/Logos/Logo/fish color.png" } 
+      ,{ "name": "fish white thin", "file": "material/images/Logos/Logo/fish white thin.png" } 
+      ,{ "name": "fish white", "file": "material/images/Logos/Logo/fish white.png" } 
+      ,{ "name": "living 2", "file": "material/images/Logos/Logo/living 2.png" } 
+      ,{ "name": "living", "file": "material/images/Logos/Logo/living.png" } 
+      ,{ "name": "logo", "file": "material/images/Logos/Logo/logo.png" } 
+      ,{ "name": "modern fish black", "file": "material/images/Logos/Logo/modern fish black.png" } 
+      ,{ "name": "modern fish white", "file": "material/images/Logos/Logo/modern fish white.png" } 
+      ,{ "name": "modern Logo black", "file": "material/images/Logos/Logo/modern Logo black.png" } 
+      ,{ "name": "modern Logo white", "file": "material/images/Logos/Logo/modern Logo white.png" } 
+      ,{ "name": "modern tagline black", "file": "material/images/Logos/Logo/modern tagline black.png" } 
+      ,{ "name": "modern tagline white", "file": "material/images/Logos/Logo/modern tagline white.png" } 
+    ] 
+, 
+    "Menu": [ 
+      { "name": "glutenfree", "file": "material/images/Logos/Menu/glutenfree.png" } 
+      ,{ "name": "vegan", "file": "material/images/Logos/Menu/vegan.png" } 
+    ] 
+, 
+    "Secondary": [ 
+      { "name": "das-labor", "file": "material/images/Logos/Secondary/das-labor.png" } 
+      ,{ "name": "info-kneipe", "file": "material/images/Logos/Secondary/info-kneipe.png" } 
+      ,{ "name": "kunstkneipe2", "file": "material/images/Logos/Secondary/kunstkneipe2.png" } 
+      ,{ "name": "punk-kneipe", "file": "material/images/Logos/Secondary/punk-kneipe.png" } 
+      ,{ "name": "queer-kneipe", "file": "material/images/Logos/Secondary/queer-kneipe.png" } 
+      ,{ "name": "spieleabend", "file": "material/images/Logos/Secondary/spieleabend.png" } 
+      ,{ "name": "wlogo_blanko", "file": "material/images/Logos/Secondary/wlogo_blanko.png" } 
+    ] 
+, 
+    "Sponsors": [ 
+      { "name": "FRFS", "file": "material/images/Logos/Sponsors/FRFS.png" } 
+      ,{ "name": "SDAJ", "file": "material/images/Logos/Sponsors/SDAJ.png" } 
+    ] 
+  }, 
+  "svg": { 
+    "Branding": [ 
+      { "name": "contrast_classic_fish", "file": "material/images/svg/Branding/contrast_classic_fish.svg" } 
+      ,{ "name": "contrast_classic_logo", "file": "material/images/svg/Branding/contrast_classic_logo.svg" } 
+      ,{ "name": "contrast_modern logo_black", "file": "material/images/svg/Branding/contrast_modern logo_black.svg" } 
+      ,{ "name": "contrast_modern logo_white", "file": "material/images/svg/Branding/contrast_modern logo_white.svg" } 
+      ,{ "name": "contrast_modern_fish", "file": "material/images/svg/Branding/contrast_modern_fish.svg" } 
+      ,{ "name": "contrast_modern_fish_outline", "file": "material/images/svg/Branding/contrast_modern_fish_outline.svg" } 
+    ] 
+, 
+    "Socials": [ 
+      { "name": "Instagram-Glyph-Black-Logo.wine", "file": "material/images/svg/Socials/Instagram-Glyph-Black-Logo.wine.svg" } 
+      ,{ "name": "Instagram-Logo.wine", "file": "material/images/svg/Socials/Instagram-Logo.wine.svg" } 
+      ,{ "name": "Instagram-Wordmark-Black-Logo.wine", "file": "material/images/svg/Socials/Instagram-Wordmark-Black-Logo.wine.svg" } 
+      ,{ "name": "Instagram-Wordmark-Logo.wine", "file": "material/images/svg/Socials/Instagram-Wordmark-Logo.wine.svg" } 
+      ,{ "name": "SoundCloud-Logo.wine", "file": "material/images/svg/Socials/SoundCloud-Logo.wine.svg" } 
+      ,{ "name": "SoundCloud_-_Logo", "file": "material/images/svg/Socials/SoundCloud_-_Logo.svg" } 
+      ,{ "name": "Spotify-Icon-Logo.wine", "file": "material/images/svg/Socials/Spotify-Icon-Logo.wine.svg" } 
+      ,{ "name": "Spotify-Logo.wine", "file": "material/images/svg/Socials/Spotify-Logo.wine.svg" } 
+      ,{ "name": "YouTube-Icon-Full-Color-Logo.wine", "file": "material/images/svg/Socials/YouTube-Icon-Full-Color-Logo.wine.svg" } 
+      ,{ "name": "YouTube-White-Full-Color-Logo.wine", "file": "material/images/svg/Socials/YouTube-White-Full-Color-Logo.wine.svg" } 
+      ,{ "name": "YouTube-White-Logo.wine", "file": "material/images/svg/Socials/YouTube-White-Logo.wine.svg" } 
+    ] 
+, 
+    "Sponsors": [ 
+      { "name": "RLS", "file": "material/images/svg/Sponsors/RLS.svg" } 
+    ] 
+  }
+}

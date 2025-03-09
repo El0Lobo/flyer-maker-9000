@@ -1,0 +1,238 @@
+{
+  "Google": { 
+    "root": [ 
+      { "name": "AbrilFatface-Regular", "file": "material/fonts/Google/AbrilFatface-Regular.ttf" } 
+      ,{ "name": "AmaticSC-Bold", "file": "material/fonts/Google/AmaticSC-Bold.ttf" } 
+      ,{ "name": "AmaticSC-Regular", "file": "material/fonts/Google/AmaticSC-Regular.ttf" } 
+      ,{ "name": "Bangers-Regular", "file": "material/fonts/Google/Bangers-Regular.ttf" } 
+      ,{ "name": "Cinzel-Black", "file": "material/fonts/Google/Cinzel-Black.ttf" } 
+      ,{ "name": "Cinzel-Bold", "file": "material/fonts/Google/Cinzel-Bold.ttf" } 
+      ,{ "name": "Cinzel-ExtraBold", "file": "material/fonts/Google/Cinzel-ExtraBold.ttf" } 
+      ,{ "name": "Cinzel-Medium", "file": "material/fonts/Google/Cinzel-Medium.ttf" } 
+      ,{ "name": "Cinzel-Regular", "file": "material/fonts/Google/Cinzel-Regular.ttf" } 
+      ,{ "name": "Cinzel-SemiBold", "file": "material/fonts/Google/Cinzel-SemiBold.ttf" } 
+      ,{ "name": "Cinzel-VariableFont_wght", "file": "material/fonts/Google/Cinzel-VariableFont_wght.ttf" } 
+      ,{ "name": "CormorantGaramond-Bold", "file": "material/fonts/Google/CormorantGaramond-Bold.ttf" } 
+      ,{ "name": "CormorantGaramond-BoldItalic", "file": "material/fonts/Google/CormorantGaramond-BoldItalic.ttf" } 
+      ,{ "name": "CormorantGaramond-Italic", "file": "material/fonts/Google/CormorantGaramond-Italic.ttf" } 
+      ,{ "name": "CormorantGaramond-Light", "file": "material/fonts/Google/CormorantGaramond-Light.ttf" } 
+      ,{ "name": "CormorantGaramond-LightItalic", "file": "material/fonts/Google/CormorantGaramond-LightItalic.ttf" } 
+      ,{ "name": "CormorantGaramond-Medium", "file": "material/fonts/Google/CormorantGaramond-Medium.ttf" } 
+      ,{ "name": "CormorantGaramond-MediumItalic", "file": "material/fonts/Google/CormorantGaramond-MediumItalic.ttf" } 
+      ,{ "name": "CormorantGaramond-Regular", "file": "material/fonts/Google/CormorantGaramond-Regular.ttf" } 
+      ,{ "name": "CormorantGaramond-SemiBold", "file": "material/fonts/Google/CormorantGaramond-SemiBold.ttf" } 
+      ,{ "name": "CormorantGaramond-SemiBoldItalic", "file": "material/fonts/Google/CormorantGaramond-SemiBoldItalic.ttf" } 
+      ,{ "name": "DancingScript-Bold", "file": "material/fonts/Google/DancingScript-Bold.ttf" } 
+      ,{ "name": "DancingScript-Medium", "file": "material/fonts/Google/DancingScript-Medium.ttf" } 
+      ,{ "name": "DancingScript-Regular", "file": "material/fonts/Google/DancingScript-Regular.ttf" } 
+      ,{ "name": "DancingScript-SemiBold", "file": "material/fonts/Google/DancingScript-SemiBold.ttf" } 
+      ,{ "name": "DancingScript-VariableFont_wght", "file": "material/fonts/Google/DancingScript-VariableFont_wght.ttf" } 
+      ,{ "name": "Doto-Black", "file": "material/fonts/Google/Doto-Black.ttf" } 
+      ,{ "name": "Doto-Bold", "file": "material/fonts/Google/Doto-Bold.ttf" } 
+      ,{ "name": "Doto-ExtraBold", "file": "material/fonts/Google/Doto-ExtraBold.ttf" } 
+      ,{ "name": "Doto-ExtraLight", "file": "material/fonts/Google/Doto-ExtraLight.ttf" } 
+      ,{ "name": "Doto-Light", "file": "material/fonts/Google/Doto-Light.ttf" } 
+      ,{ "name": "Doto-Medium", "file": "material/fonts/Google/Doto-Medium.ttf" } 
+      ,{ "name": "Doto-Regular", "file": "material/fonts/Google/Doto-Regular.ttf" } 
+      ,{ "name": "Doto-SemiBold", "file": "material/fonts/Google/Doto-SemiBold.ttf" } 
+      ,{ "name": "Doto-Thin", "file": "material/fonts/Google/Doto-Thin.ttf" } 
+      ,{ "name": "Doto-VariableFont_ROND,wght", "file": "material/fonts/Google/Doto-VariableFont_ROND,wght.ttf" } 
+      ,{ "name": "Doto_Rounded-Black", "file": "material/fonts/Google/Doto_Rounded-Black.ttf" } 
+      ,{ "name": "Doto_Rounded-Bold", "file": "material/fonts/Google/Doto_Rounded-Bold.ttf" } 
+      ,{ "name": "Doto_Rounded-ExtraBold", "file": "material/fonts/Google/Doto_Rounded-ExtraBold.ttf" } 
+      ,{ "name": "Doto_Rounded-ExtraLight", "file": "material/fonts/Google/Doto_Rounded-ExtraLight.ttf" } 
+      ,{ "name": "Doto_Rounded-Light", "file": "material/fonts/Google/Doto_Rounded-Light.ttf" } 
+      ,{ "name": "Doto_Rounded-Medium", "file": "material/fonts/Google/Doto_Rounded-Medium.ttf" } 
+      ,{ "name": "Doto_Rounded-Regular", "file": "material/fonts/Google/Doto_Rounded-Regular.ttf" } 
+      ,{ "name": "Doto_Rounded-SemiBold", "file": "material/fonts/Google/Doto_Rounded-SemiBold.ttf" } 
+      ,{ "name": "Doto_Rounded-Thin", "file": "material/fonts/Google/Doto_Rounded-Thin.ttf" } 
+      ,{ "name": "JosefinSans-Bold", "file": "material/fonts/Google/JosefinSans-Bold.ttf" } 
+      ,{ "name": "JosefinSans-BoldItalic", "file": "material/fonts/Google/JosefinSans-BoldItalic.ttf" } 
+      ,{ "name": "JosefinSans-ExtraLight", "file": "material/fonts/Google/JosefinSans-ExtraLight.ttf" } 
+      ,{ "name": "JosefinSans-ExtraLightItalic", "file": "material/fonts/Google/JosefinSans-ExtraLightItalic.ttf" } 
+      ,{ "name": "JosefinSans-Italic-VariableFont_wght", "file": "material/fonts/Google/JosefinSans-Italic-VariableFont_wght.ttf" } 
+      ,{ "name": "JosefinSans-Italic", "file": "material/fonts/Google/JosefinSans-Italic.ttf" } 
+      ,{ "name": "JosefinSans-Light", "file": "material/fonts/Google/JosefinSans-Light.ttf" } 
+      ,{ "name": "JosefinSans-LightItalic", "file": "material/fonts/Google/JosefinSans-LightItalic.ttf" } 
+      ,{ "name": "JosefinSans-Medium", "file": "material/fonts/Google/JosefinSans-Medium.ttf" } 
+      ,{ "name": "JosefinSans-MediumItalic", "file": "material/fonts/Google/JosefinSans-MediumItalic.ttf" } 
+      ,{ "name": "JosefinSans-Regular", "file": "material/fonts/Google/JosefinSans-Regular.ttf" } 
+      ,{ "name": "JosefinSans-SemiBold", "file": "material/fonts/Google/JosefinSans-SemiBold.ttf" } 
+      ,{ "name": "JosefinSans-SemiBoldItalic", "file": "material/fonts/Google/JosefinSans-SemiBoldItalic.ttf" } 
+      ,{ "name": "JosefinSans-Thin", "file": "material/fonts/Google/JosefinSans-Thin.ttf" } 
+      ,{ "name": "JosefinSans-ThinItalic", "file": "material/fonts/Google/JosefinSans-ThinItalic.ttf" } 
+      ,{ "name": "JosefinSans-VariableFont_wght", "file": "material/fonts/Google/JosefinSans-VariableFont_wght.ttf" } 
+      ,{ "name": "LICENSE", "file": "material/fonts/Google/LICENSE.txt" } 
+      ,{ "name": "OFL", "file": "material/fonts/Google/OFL.txt" } 
+      ,{ "name": "Orbitron-Black", "file": "material/fonts/Google/Orbitron-Black.ttf" } 
+      ,{ "name": "Orbitron-Bold", "file": "material/fonts/Google/Orbitron-Bold.ttf" } 
+      ,{ "name": "Orbitron-ExtraBold", "file": "material/fonts/Google/Orbitron-ExtraBold.ttf" } 
+      ,{ "name": "Orbitron-Medium", "file": "material/fonts/Google/Orbitron-Medium.ttf" } 
+      ,{ "name": "Orbitron-Regular", "file": "material/fonts/Google/Orbitron-Regular.ttf" } 
+      ,{ "name": "Orbitron-SemiBold", "file": "material/fonts/Google/Orbitron-SemiBold.ttf" } 
+      ,{ "name": "Orbitron-VariableFont_wght", "file": "material/fonts/Google/Orbitron-VariableFont_wght.ttf" } 
+      ,{ "name": "Pacifico-Regular", "file": "material/fonts/Google/Pacifico-Regular.ttf" } 
+      ,{ "name": "PermanentMarker-Regular", "file": "material/fonts/Google/PermanentMarker-Regular.ttf" } 
+      ,{ "name": "PlaywriteHRLijeva-ExtraLight", "file": "material/fonts/Google/PlaywriteHRLijeva-ExtraLight.ttf" } 
+      ,{ "name": "PlaywriteHRLijeva-Light", "file": "material/fonts/Google/PlaywriteHRLijeva-Light.ttf" } 
+      ,{ "name": "PlaywriteHRLijeva-Regular", "file": "material/fonts/Google/PlaywriteHRLijeva-Regular.ttf" } 
+      ,{ "name": "PlaywriteHRLijeva-Thin", "file": "material/fonts/Google/PlaywriteHRLijeva-Thin.ttf" } 
+      ,{ "name": "PlaywriteHRLijeva-VariableFont_wght", "file": "material/fonts/Google/PlaywriteHRLijeva-VariableFont_wght.ttf" } 
+      ,{ "name": "README", "file": "material/fonts/Google/README.txt" } 
+      ,{ "name": "Roboto-Black", "file": "material/fonts/Google/Roboto-Black.ttf" } 
+      ,{ "name": "Roboto-BlackItalic", "file": "material/fonts/Google/Roboto-BlackItalic.ttf" } 
+      ,{ "name": "Roboto-Bold", "file": "material/fonts/Google/Roboto-Bold.ttf" } 
+      ,{ "name": "Roboto-BoldItalic", "file": "material/fonts/Google/Roboto-BoldItalic.ttf" } 
+      ,{ "name": "Roboto-Italic", "file": "material/fonts/Google/Roboto-Italic.ttf" } 
+      ,{ "name": "Roboto-Light", "file": "material/fonts/Google/Roboto-Light.ttf" } 
+      ,{ "name": "Roboto-LightItalic", "file": "material/fonts/Google/Roboto-LightItalic.ttf" } 
+      ,{ "name": "Roboto-Medium", "file": "material/fonts/Google/Roboto-Medium.ttf" } 
+      ,{ "name": "Roboto-MediumItalic", "file": "material/fonts/Google/Roboto-MediumItalic.ttf" } 
+      ,{ "name": "Roboto-Regular", "file": "material/fonts/Google/Roboto-Regular.ttf" } 
+      ,{ "name": "Roboto-Thin", "file": "material/fonts/Google/Roboto-Thin.ttf" } 
+      ,{ "name": "Roboto-ThinItalic", "file": "material/fonts/Google/Roboto-ThinItalic.ttf" } 
+      ,{ "name": "ShadowsIntoLight-Regular", "file": "material/fonts/Google/ShadowsIntoLight-Regular.ttf" } 
+      ,{ "name": "Whisper-Regular", "file": "material/fonts/Google/Whisper-Regular.ttf" } 
+      ,{ "name": "YujiMai-Regular", "file": "material/fonts/Google/YujiMai-Regular.ttf" } 
+    ] 
+  }, 
+  "Holidays": { 
+    "root": [ 
+      { "name": "212 Saint Paddy Demo", "file": "material/fonts/Holidays/212 Saint Paddy Demo.ttf" } 
+      ,{ "name": "Balloon Party", "file": "material/fonts/Holidays/Balloon Party.ttf" } 
+      ,{ "name": "Be My Valentine", "file": "material/fonts/Holidays/Be My Valentine.otf" } 
+      ,{ "name": "Be My Valentine", "file": "material/fonts/Holidays/Be My Valentine.ttf" } 
+      ,{ "name": "Black Witcher", "file": "material/fonts/Holidays/Black Witcher.otf" } 
+      ,{ "name": "Bogarts Metal", "file": "material/fonts/Holidays/Bogarts Metal.ttf" } 
+      ,{ "name": "Candcu__", "file": "material/fonts/Holidays/Candcu__.ttf" } 
+      ,{ "name": "CFHalloween-Regular", "file": "material/fonts/Holidays/CFHalloween-Regular.ttf" } 
+      ,{ "name": "CHRISTMAS COMEBACK", "file": "material/fonts/Holidays/CHRISTMAS COMEBACK.otf" } 
+      ,{ "name": "Coraline's Cat", "file": "material/fonts/Holidays/Coraline's%Cat.otf" } 
+      ,{ "name": "Coraline's Cat", "file": "material/fonts/Holidays/Coraline's%Cat.ttf" } 
+      ,{ "name": "Danger Night", "file": "material/fonts/Holidays/Danger Night - Personal Use.otf" } 
+      ,{ "name": "Danger Night", "file": "material/fonts/Holidays/Danger Night - Personal Use.ttf" } 
+      ,{ "name": "DevilCandleAlt", "file": "material/fonts/Holidays/DevilCandleAlt_PERSONAL_USE_ONLY.otf" } 
+      ,{ "name": "DevilCandle", "file": "material/fonts/Holidays/DevilCandle_PERSONAL_USE_ONLY.otf" } 
+      ,{ "name": "Halloween Morning", "file": "material/fonts/Holidays/Halloween Morning.ttf" } 
+      ,{ "name": "Happy Patrick", "file": "material/fonts/Holidays/Happy Patrick.otf" } 
+      ,{ "name": "Happy Patrick", "file": "material/fonts/Holidays/Happy Patrick.ttf" } 
+      ,{ "name": "Haunted Hospital", "file": "material/fonts/Holidays/Haunted Hospital.otf" } 
+      ,{ "name": "IrishPenny", "file": "material/fonts/Holidays/IrishPenny.ttf" } 
+      ,{ "name": "IrishUncialfabeta-Bold", "file": "material/fonts/Holidays/IrishUncialfabeta-Bold.ttf" } 
+      ,{ "name": "KINKEE__", "file": "material/fonts/Holidays/KINKEE__.TTF" } 
+      ,{ "name": "KLCupid", "file": "material/fonts/Holidays/KLCupid.ttf" } 
+      ,{ "name": "LastChristmasSymbols", "file": "material/fonts/Holidays/LastChristmasSymbols_PERSONAL_USE_ONLY.otf" } 
+      ,{ "name": "LastChristmas", "file": "material/fonts/Holidays/LastChristmas_PERSONAL_USE_ONLY.otf" } 
+      ,{ "name": "Mf Love Song", "file": "material/fonts/Holidays/Mf Love Song.ttf" } 
+      ,{ "name": "October Crow", "file": "material/fonts/Holidays/October Crow.ttf" } 
+      ,{ "name": "PartybyTom", "file": "material/fonts/Holidays/PartybyTom.TTF" } 
+      ,{ "name": "PWHappyNewYear", "file": "material/fonts/Holidays/PWHappyNewYear.ttf" } 
+      ,{ "name": "Santa's Air Mail", "file": "material/fonts/Holidays/Santa's Air Mail.ttf" } 
+      ,{ "name": "Slimespooky Outline", "file": "material/fonts/Holidays/Slimespooky Outline.ttf" } 
+      ,{ "name": "Slimespooky", "file": "material/fonts/Holidays/Slimespooky.ttf" } 
+      ,{ "name": "the Witch", "file": "material/fonts/Holidays/the Witch.ttf" } 
+      ,{ "name": "Valentine Cute", "file": "material/fonts/Holidays/Valentine Cute.ttf" } 
+      ,{ "name": "Valentine", "file": "material/fonts/Holidays/Valentine.otf" } 
+      ,{ "name": "Valentine", "file": "material/fonts/Holidays/Valentine.ttf" } 
+      ,{ "name": "WonderfulChristmasSymbols", "file": "material/fonts/Holidays/WonderfulChristmasSymbols.otf" } 
+      ,{ "name": "WonderfulChristmas", "file": "material/fonts/Holidays/WonderfulChristmas.otf" } 
+    ] 
+  }, 
+  "mixed bag": { 
+    "root": [ 
+      { "name": "28 Days Later", "file": "material/fonts/mixed bag/28%Days%Later.ttf" } 
+      ,{ "name": "ALBAM___", "file": "material/fonts/mixed bag/ALBAM___.TTF" } 
+      ,{ "name": "ALBAS___", "file": "material/fonts/mixed bag/ALBAS___.TTF" } 
+      ,{ "name": "ALBA____", "file": "material/fonts/mixed bag/ALBA____.TTF" } 
+      ,{ "name": "All Star Resort", "file": "material/fonts/mixed bag/All Star Resort.ttf" } 
+      ,{ "name": "angelina", "file": "material/fonts/mixed bag/angelina.TTF" } 
+      ,{ "name": "BarcodeFont", "file": "material/fonts/mixed bag/BarcodeFont.ttf" } 
+      ,{ "name": "BILLO___", "file": "material/fonts/mixed bag/BILLO___.TTF" } 
+      ,{ "name": "BIRTH_OF_A_HERO", "file": "material/fonts/mixed bag/BIRTH_OF_A_HERO.ttf" } 
+      ,{ "name": "Blazed", "file": "material/fonts/mixed bag/Blazed.ttf" } 
+      ,{ "name": "Bleeding_Cowboys", "file": "material/fonts/mixed bag/Bleeding_Cowboys.ttf" } 
+      ,{ "name": "Capture it 2", "file": "material/fonts/mixed bag/Capture it 2.ttf" } 
+      ,{ "name": "Capture it", "file": "material/fonts/mixed bag/Capture it.ttf" } 
+      ,{ "name": "Champagne & Limousines Bold Italic", "file": "material/fonts/mixed bag/Champagne & Limousines Bold Italic.ttf" } 
+      ,{ "name": "Champagne & Limousines Bold", "file": "material/fonts/mixed bag/Champagne & Limousines Bold.ttf" } 
+      ,{ "name": "Champagne & Limousines Italic", "file": "material/fonts/mixed bag/Champagne & Limousines Italic.ttf" } 
+      ,{ "name": "Champagne & Limousines", "file": "material/fonts/mixed bag/Champagne & Limousines.ttf" } 
+      ,{ "name": "Champignon", "file": "material/fonts/mixed bag/Champignon.otf" } 
+      ,{ "name": "champignonaltswash", "file": "material/fonts/mixed bag/champignonaltswash.ttf" } 
+      ,{ "name": "CHERI___", "file": "material/fonts/mixed bag/CHERI___.TTF" } 
+      ,{ "name": "CHERL___", "file": "material/fonts/mixed bag/CHERL___.TTF" } 
+      ,{ "name": "ChopinScript", "file": "material/fonts/mixed bag/ChopinScript.otf" } 
+      ,{ "name": "Cocaine sans", "file": "material/fonts/mixed bag/Cocaine sans.ttf" } 
+      ,{ "name": "Complete in Him", "file": "material/fonts/mixed bag/Complete in Him.ttf" } 
+      ,{ "name": "English_", "file": "material/fonts/mixed bag/English_.ttf" } 
+      ,{ "name": "evanescent", "file": "material/fonts/mixed bag/evanescent.ttf" } 
+      ,{ "name": "evanescent_p", "file": "material/fonts/mixed bag/evanescent_p.ttf" } 
+      ,{ "name": "Filxgirl", "file": "material/fonts/mixed bag/Filxgirl.TTF" } 
+      ,{ "name": "Font (el&font BLOCK)", "file": "material/fonts/mixed bag/Font (el&font BLOCK).ttf" } 
+      ,{ "name": "Font (el&font gothic)", "file": "material/fonts/mixed bag/Font (el&font gothic).ttf" } 
+      ,{ "name": "FREEBSCA", "file": "material/fonts/mixed bag/FREEBSCA.ttf" } 
+      ,{ "name": "FREEBSC_", "file": "material/fonts/mixed bag/FREEBSC_.ttf" } 
+      ,{ "name": "GeosansLight-Oblique", "file": "material/fonts/mixed bag/GeosansLight-Oblique.ttf" } 
+      ,{ "name": "GeosansLight", "file": "material/fonts/mixed bag/GeosansLight.ttf" } 
+      ,{ "name": "graffonti.3d.drop.[fontvir.us]", "file": "material/fonts/mixed bag/graffonti.3d.drop.[fontvir.us].ttf" } 
+      ,{ "name": "graffonti.atomic.bomb.[fontvir.us]", "file": "material/fonts/mixed bag/graffonti.atomic.bomb.[fontvir.us].ttf" } 
+      ,{ "name": "graffonti.gradient.fill.[fontvir.us]", "file": "material/fonts/mixed bag/graffonti.gradient.fill.[fontvir.us].ttf" } 
+      ,{ "name": "GREENPIL", "file": "material/fonts/mixed bag/GREENPIL.otf" } 
+      ,{ "name": "handsean", "file": "material/fonts/mixed bag/handsean.ttf" } 
+      ,{ "name": "Harabara", "file": "material/fonts/mixed bag/Harabara.ttf" } 
+      ,{ "name": "HoneyScript-Light", "file": "material/fonts/mixed bag/HoneyScript-Light.ttf" } 
+      ,{ "name": "HoneyScript-SemiBold", "file": "material/fonts/mixed bag/HoneyScript-SemiBold.ttf" } 
+      ,{ "name": "JaneAust", "file": "material/fonts/mixed bag/JaneAust.ttf" } 
+      ,{ "name": "Jellyka_Castle _s_Queen", "file": "material/fonts/mixed bag/Jellyka_Castle _s_Queen.ttf" } 
+      ,{ "name": "Jellyka_Estrya_Handwriting", "file": "material/fonts/mixed bag/Jellyka_Estrya_Handwriting.ttf" } 
+      ,{ "name": "JOURNAL", "file": "material/fonts/mixed bag/JOURNAL.TTF" } 
+      ,{ "name": "Kaileen", "file": "material/fonts/mixed bag/Kaileen.ttf" } 
+      ,{ "name": "karabine", "file": "material/fonts/mixed bag/karabine.ttf" } 
+      ,{ "name": "Marcsc___", "file": "material/fonts/mixed bag/Marcsc___.ttf" } 
+      ,{ "name": "MARCS___", "file": "material/fonts/mixed bag/MARCS___.ttf" } 
+      ,{ "name": "Mostwasted", "file": "material/fonts/mixed bag/Mostwasted.ttf" } 
+      ,{ "name": "Mutlu__Ornamental", "file": "material/fonts/mixed bag/Mutlu__Ornamental.ttf" } 
+      ,{ "name": "Pokemon Hollow", "file": "material/fonts/mixed bag/Pokemon Hollow.ttf" } 
+      ,{ "name": "Pokemon Solid", "file": "material/fonts/mixed bag/Pokemon Solid.ttf" } 
+      ,{ "name": "PORCELAI", "file": "material/fonts/mixed bag/PORCELAI.TTF" } 
+      ,{ "name": "Pulse_virgin", "file": "material/fonts/mixed bag/Pulse_virgin.ttf" } 
+      ,{ "name": "riesling", "file": "material/fonts/mixed bag/riesling.ttf" } 
+      ,{ "name": "Saint-Andrews Queen", "file": "material/fonts/mixed bag/Saint-Andrews Queen.ttf" } 
+      ,{ "name": "SCRIPALT", "file": "material/fonts/mixed bag/SCRIPALT.ttf" } 
+      ,{ "name": "SCRIPTIN", "file": "material/fonts/mixed bag/SCRIPTIN.ttf" } 
+      ,{ "name": "Sketch_Block", "file": "material/fonts/mixed bag/Sketch_Block.ttf" } 
+      ,{ "name": "the_King__26_Queen_font", "file": "material/fonts/mixed bag/the_King__26_Queen_font.ttf" } 
+      ,{ "name": "trashco", "file": "material/fonts/mixed bag/trashco.ttf" } 
+      ,{ "name": "visitor1", "file": "material/fonts/mixed bag/visitor1.ttf" } 
+      ,{ "name": "visitor2", "file": "material/fonts/mixed bag/visitor2.ttf" } 
+      ,{ "name": "Vtks Revolt", "file": "material/fonts/mixed bag/Vtks Revolt.ttf" } 
+      ,{ "name": "waltograph", "file": "material/fonts/mixed bag/waltograph.otf" } 
+      ,{ "name": "waltographUI", "file": "material/fonts/mixed bag/waltographUI.ttf" } 
+      ,{ "name": "Windsong", "file": "material/fonts/mixed bag/Windsong.ttf" } 
+    ] 
+  }, 
+  "Standards": { 
+    "root": [
+      { "name": "Chalkboy", "file": "material/fonts/Standards/Chalkboy.ttf" }  
+      ,{ "name": "Achilles", "file": "material/fonts/Standards/Achilles.otf" } 
+      ,{ "name": "across the lines", "file": "material/fonts/Standards/across%the%lines.ttf" } 
+      ,{ "name": "Anarchaos", "file": "material/fonts/Standards/Anarchaos.otf" } 
+      ,{ "name": "bahnschrift", "file": "material/fonts/Standards/bahnschrift.ttf" } 
+      ,{ "name": "Carnivalee Freakshow", "file": "material/fonts/Standards/Carnevalee%Freakshow.ttf" } 
+      ,{ "name": "Electro Insanity", "file": "material/fonts/Standards/Electro%Insanity.ttf" } 
+      ,{ "name": "Expressway Cd", "file": "material/fonts/Standards/Expressway Cd.ttf" } 
+      ,{ "name": "handodle.regular", "file": "material/fonts/Standards/handodle.regular.ttf" } 
+      ,{ "name": "HeyBetty", "file": "material/fonts/Standards/HeyBetty.ttf" } 
+      ,{ "name": "Hit", "file": "material/fonts/Standards/Hit.ttf" } 
+      ,{ "name": "HORRORSPRAY", "file": "material/fonts/Standards/HORRORSPRAY.ttf" } 
+      ,{ "name": "Jurassic Park", "file": "material/fonts/Standards/Jurassic%Park.ttf" } 
+      ,{ "name": "Mustasurma", "file": "material/fonts/Standards/Mustasurma.ttf" } 
+      ,{ "name": "PIG", "file": "material/fonts/Standards/PIG.TTF" } 
+      ,{ "name": "punk kid", "file": "material/fonts/Standards/punk%kid.ttf" } 
+      ,{ "name": "Punktype", "file": "material/fonts/Standards/Punktype.ttf" } 
+      ,{ "name": "santacarla", "file": "material/fonts/Standards/santacarla.ttf" } 
+      ,{ "name": "sketchzone.regular", "file": "material/fonts/Standards/sketchzone.regular.ttf" } 
+      ,{ "name": "TAGLINER", "file": "material/fonts/Standards/TAGLINER.ttf" } 
+    ] 
+  }
+}

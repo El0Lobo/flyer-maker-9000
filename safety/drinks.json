@@ -1,0 +1,43 @@
+{
+    "Getränke & Snacks": {
+      "Alkohol": {
+        "Bier": [
+          {"Name": "Export", "Amount": "0.5l", "Price": "3€"},
+          {"Name": "Weizen", "Amount": "0.5l", "Price": "3€"},
+          {"Name": "Radler", "Amount": "0.5l", "Price": "3€"},
+          {"Name": "Schimmele", "Amount": "0.3l", "Price": "2.5€"},
+          {"Name": "Märzen", "Amount": "0.3l", "Price": "2.5€"},
+          {"Name": "Pils", "Amount": "0.3l", "Price": "2.5€"},
+          {"Name": "Radler", "Amount": "0.3l", "Price": "2.5€"},
+          {"Name": "Alkoholfrei", "Amount": "0.3l", "Price": "2€"}
+        ],
+        "Wein & Sekt": [
+          {"Name": "Wein Rot", "Amount": "0.2l", "Price": "2.5€"},
+          {"Name": "Wein Weiß", "Amount": "0.2l", "Price": "2.5€"},
+          {"Name": "Weinschorle", "Amount": "0.2l", "Price": "2.5€"},
+          {"Name": "Weinschorle", "Amount": "0.5l", "Price": "5€"},
+          {"Name": "Sekt", "Amount": "0.1l", "Price": "2.5€"}
+        ]
+      },
+      "Softdrinks": [
+        {"Name": "Apfelschorle", "Amount": "0.5l", "Price": "2€"},
+        {"Name": "Cola", "Amount": "0.5l", "Price": "2€"},
+        {"Name": "Orangenlimo", "Amount": "0.5l", "Price": "2€"},
+        {"Name": "Zitronenlimo", "Amount": "0.5l", "Price": "2€"},
+        {"Name": "ACE-Saft", "Amount": "0.5l", "Price": "2€"},
+        {"Name": "Johannisschorle", "Amount": "0.5l", "Price": "2€"},
+        {"Name": "Fritz-Cola 'zero'", "Amount": "0.3l", "Price": "2€"},
+        {"Name": "Eistee", "Amount": "0.3l", "Price": "3€"},
+        {"Name": "Mate", "Amount": "0.5l", "Price": "2.5€"},
+        {"Name": "Energy", "Amount": "0.2l", "Price": "3€"},
+        {"Name": "Sprudel", "Amount": "0.5l", "Price": "1€"},
+        {"Name": "Leitungswasser", "Amount": "∞", "Price": "Free"}
+      ],
+      "Snacks": [
+        {"Name": "Chips", "Price": "1€"},
+        {"Name": "Erdnüsse", "Price": "1€"},
+        {"Name": "Lollis", "Price": "0.2€"}
+      ]
+    }
+  }
+  

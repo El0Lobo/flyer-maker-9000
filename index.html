@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flyertron 9000</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css'>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap&family=Lobster:wght@400;700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Flyertron 9000</h1>
+    <div>
+      <div class="text-tools">
+        <button id="open-modal">Add a Event</button>
+
+        <div id="event-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="event">
+              <h2>Event Details</h2>
+              <div class="colors" style="display:flex;align-items:center;">
+                <label for="text-color-picker" style="width: 100px" ;>Color?:</label>
+                <input type="checkbox" id="apply-color" checked style="height:min-content;">
+                <input type="color" id="text-color-picker" value="#ffffff">
+                <label for="text-outline-picker">Outline?:</label>
+                <input type="checkbox" id="apply-outline" unchecked style="height:min-content;">
+                <input type="color" id="text-outline-picker" value="none">
+                <label for="text-glow-picker">Glow?:</label>
+                <input type="checkbox" id="apply-glow" unchecked style="height:min-content;">
+                <input type="color" id="text-glow-picker" value="none">
+              </div>
+              <div class="font-selection" style="display:flex;gap:10px;align-items:center;margin-bottom:10px;">
+                <label for="font-picker">Font:</label>
+                <select id="font-picker" style="width:150px;"></select>
+              </div>
+              <label for="text-selector">Select Mode:</label>
+              <select id="text-selector">
+                <option value="Demo">Demo</option>
+              </select>
+
+
+              <div class="form-section Demo">
+                <div>
+                  <label for="demo-title">Title:</label>
+                  <input type="text" id="demo-title">
+                </div>
+
+                <div>
+                  <label for="demo-description">Description:</label>
+                  <textarea id="demo-description"></textarea>
+                </div>
+
+                <div>
+                  <label for="demo-date">Date:</label>
+                  <input type="date" id="demo-date">
+                </div>
+
+                <div>
+                  <label for="demo-time">When:</label>
+                  <input type="time" id="demo-time">
+                </div>
+
+                <div>
+                  <label for="demo-start">Start:</label>
+                  <input type="time" id="demo-start">
+                </div>
+
+                <div>
+                  <label for="demo-place">Where:</label>
+                  <input type="text" id="demo-place">
+                </div>
+
+                <div>
+                  <label for="event-place">Street:</label>
+                  <input type="text" id="event-place" placeholder="Enter a location">
+                  <ul id="address-suggestions"></ul> <!-- Autocomplete dropdown -->
+                </div>
+
+                <div>
+                  <label for="demo-image-upload">Image:</label>
+                  <input type="file" id="demo-image-upload" accept="image/*" style="display: flex;">
+                </div>
+              </div>
+
+
+              <div class="form-section Event" style="display: none;">
+                <div><label for="event-title">Title:</label><input type="text" id="event-title"></div>
+                <div><label for="event-description">Description:</label><textarea id="event-description"></textarea>
+                </div>
+                <div><label for="event-date">Date:</label><input type="date" id="event-date"></div>
+                <div><label for="event-time">Doors:</label><input type="time" id="event-time"></div>
+                <div><label for="event-start">Start:</label><input type="time" id="event-start"></div>
+                <div><label for="event-price">Price:</label><input type="text" id="event-price"></div>
+                <div><label for="event-place">Where:</label><input type="text" id="demo-place"></div>
+              </div>
+
+              <div class="form-section Menu">
+                <button id="add-menu" style="height:min-content;">Add Menu</button>
+                <div id="menu-form-container"></div>
+              </div>
+
+              <button id="add-event-details">Add Event Details</button>
+            </div>
+          </div>
+        </div>
+
+
+        <br><br>
+        <h2>Add Text</h2>
+        <div id="additional-text">
+          <textarea id="text-input" placeholder="Enter your text"></textarea>
+          <div class="font-selection" style="display:flex; gap:10px; align-items:center; margin-bottom:10px;">
+            <label for="additional-text-font">Font:</label>
+            <select id="additional-text-font" style="width:150px;"></select>
+          </div>
+          <div class="colors" style="display:flex;align-items:center;">
+            <label for="text-color-picker2">Color:</label>
+            <input type="checkbox" id="apply-color2" checked style="height:min-content;">
+            <input type="color" id="text-color-picker2" value="#000000">
+            <label for="text-outline-picker2">Outline:</label>
+            <input type="checkbox" id="apply-outline2" checked style="height:min-content;">
+            <input type="color" id="text-outline-picker2" value="none">
+            <label for="text-glow-picker2">Glow:</label>
+            <input type="checkbox" id="apply-glow2" checked style="height:min-content;">
+            <input type="color" id="text-glow-picker2" value="none">
+          </div>
+          <div class="sliders" style="display:flex; align-items:center; gap:10px;">
+            <label for="outline-size-slider">Outline Size:</label>
+            <input type="range" id="outline-size-slider" min="0" max="3" value="0.5" step="0.01">
+            <label for="glow-size-slider">Glow Size:</label>
+            <input type="range" id="glow-size-slider" min="0" max="350" value="10">
+          </div>
+          <div class="text-style-options" style="display:flex;align-items:center;">
+            <label><input type="checkbox" id="text-bold" /> Bold</label>
+            <label><input type="checkbox" id="text-italic" /> Italic</label>
+            <label><input type="checkbox" id="text-underline" /> Underline</label>
+            <label><input type="checkbox" id="text-strikethrough" /> Strikethrough</label>
+          </div>
+          <div class="text-style-options" style="display:flex;align-items:center;">
+            <label for="text-align">Align:</label>
+            <select id="text-align">
+              <option value="left" selected>Left</option>
+              <option value="center">Center</option>
+              <option value="right">Right</option>
+              <option value="justify">Justify</option>
+            </select>
+          </div>
+          <button id="add-text-btn">Add Text</button>
+        </div>
+        <br><br>
+        <button id="save-placements">Save Placements</button>
+        <input type="file" id="import-placements" accept="application/json">
+      </div>
+      <div class="help-button" id="open-help">?</div>
+      <div class="canvas-symbols">
+        <img src="material/square.png" class="canvas-symbol canvas-symbol-active" data-id="Instapost"
+          style="width: 50px;height: 50px;">
+        <img src="material/portrait.png" class="canvas-symbol" data-id="portrait"
+          style="width: 50px;height: 70px;position: relative;top: -18px;">
+        <img src="material/landscape.png" class="canvas-symbol" data-id="landscape" style="width: 70px;height: 50px;">
+      </div>
+    </div>
+    <div>
+      <ul class="assets">
+        <div>
+          <div id="drawing-controls">
+            <h2>Draw Controls</h2>
+            <label for="color-picker">Color:</label>
+            <input type="color" id="color-picker" value="#ffffff">
+            <label for="size-slider">Size:</label>
+            <input type="range" id="size-slider" min="1" max="120" value="5" style="max-width:150px;margin-left:10px;">
+            <br>
+
+            <button id="toggle-drawing">Start drawing</button>
+          </div>
+          <h2>Picture Settings</h2>
+          <label for="svg-color-picker">Color:</label>
+          <input type="color" id="svg-color-picker" value="#000000" style="max-width:33px;">
+          <label for="opacity-slider">Opacity:</label>
+          <input type="range" id="opacity-slider" min="0" max="1" value="1" step="0.01"
+            style="max-width:150px;margin-left:10px;">
+          <input type="file" id="background-upload" accept="image/*" style="display:none;" />
+          <button id="upload-bg-btn">Upload Background</button>
+          <input type="file" id="asset-upload" accept="image/*" style="display:none;" />
+          <button id="upload-asset-btn">Upload Asset</button>
+        </div>
+        <div id="assets-container"></div>
+        <div>
+          <h3>User Uploads</h3>
+          <ul class="content"></ul>
+        </div>
+      </ul>
+    </div>
+    <div class="color-overlay"></div>
+    <div class="top-bar">
+      <button id="export-png">Export to Png</button>
+      <div class="zoom-controls">
+        <label for="zoom-range">Zoom:</label>
+        <input type="range" id="zoom-range" min="0.1" max="1" step="0.01" value="0.5"
+          style="position: relative;top: 6px;">
+      </div>
+      <div class="panning-controls">
+        <label for="pan-x">Pan X:</label>
+        <input type="number" id="pan-x" value="0" step="10">
+        <label for="pan-y">Pan Y:</label>
+        <input type="number" id="pan-y" value="0" step="10">
+      </div>
+      <div class="ACME">
+        <span class="footer-text">Developed by</span>
+        <a href="https://acme-prototypes.com/" class="footer-link">
+          <img src="material/ACME (Small).png" class="footer-symbol" alt="Footer Symbol">
+        </a>
+      </div>
+    </div>
+    <div id="help-overlay" class="help-overlay">
+      <div id="help-modal" class="help-modal">
+        <span class="close-modal" id="close-help">&times;</span>
+        <h2>Features & Controls</h2>
+
+        <h3>Canvas Controls</h3>
+        <h4>Zoom & Pan</h4>
+        <ul>
+          <li>Use the zoom slider to adjust zoom levels.</li>
+          <li>Scroll wheel can be used to zoom in and out.</li>
+          <li>Use the arrow keys to pan across the canvas.</li>
+          <li>Middle mouse button drag allows panning.</li>
+        </ul>
+
+        <h4>Modes</h4>
+        <p>Click the 'Square', 'Portrait', or 'Landscape' buttons to set the appropriate canvas size and background.</p>
+
+        <h3>Adding and Editing Text</h3>
+        <ul>
+          <li>Select a text type from the dropdown menu (Info, Concert, Demo, Event).</li>
+          <li>Enter the text details (title, description, date, etc.).</li>
+          <li>Click 'Add Event Details' to place text on the canvas.</li>
+          <li>Click the 🖊️ edit icon near a selected text element to modify text in a pop-up input field.</li>
+          <li>Customize text properties (color, outline, glow, font, alignment).</li>
+        </ul>
+
+        <h3>Layers & Object Manipulation</h3>
+        <ul>
+          <li>🗑️ Delete: Removes the selected object.</li>
+          <li>⬆️ Move Up: Brings the selected object one layer forward.</li>
+          <li>⬇️ Move Down: Sends the selected object one layer backward.</li>
+        </ul>
+
+        <h3>Adding Images</h3>
+        <ul>
+          <li>Click 'Upload Background' to set a custom background.</li>
+          <li>Click 'Upload Asset' to add custom images.</li>
+          <li>Click on a band logo upload input to attach a band logo (for concerts).</li>
+          <li>Click on image assets in the sidebar to place them on the canvas.</li>
+        </ul>
+
+        <h3>Drawing Tools</h3>
+        <ul>
+          <li>Click 'Start drawing' to enable freehand drawing.</li>
+          <li>Adjust color and brush size using the sliders.</li>
+          <li>Click 'Stop drawing' to return to normal mode.</li>
+        </ul>
+
+        <h3>Exporting Your Flyer</h3>
+        <ul>
+          <li>Click 'Export to PNG' to download the flyer.</li>
+          <li>Ensure the final adjustments are made before exporting.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wa-image-editor">
+    <div>
+      <canvas class="image-editor" id="wa-image-editor-canvas"></canvas>
+    </div>
+
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.8/fabric.min.js'></script>
+    <script src='./script.js'></script>
+
+</body>
+
+</html>

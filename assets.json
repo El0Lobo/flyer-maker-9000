@@ -1,0 +1,145 @@
+{
+  "Assets": { 
+    "root": [ 
+      { "name": "Anti-Nazi-Symbol", "file": "material/images/Assets/Anti-Nazi-Symbol.svg" } 
+      ,{ "name": "Antifa", "file": "material/images/Assets/Antifa.svg" } 
+      ,{ "name": "Antifalogo.svg_", "file": "material/images/Assets/Antifalogo.svg_.png" } 
+      ,{ "name": "Antifasistische_Aktion_logo", "file": "material/images/Assets/Antifasistische_Aktion_logo.svg" } 
+      ,{ "name": "Antifa_logo", "file": "material/images/Assets/Antifa_logo.png" } 
+      ,{ "name": "beer", "file": "material/images/Assets/beer.png" } 
+      ,{ "name": "cat", "file": "material/images/Assets/cat.png" } 
+      ,{ "name": "Cross out Chalk", "file": "material/images/Assets/Cross out Chalk.png" } 
+      ,{ "name": "Fuechse-haben", "file": "material/images/Assets/Fuechse-haben.png" } 
+      ,{ "name": "gegen-nazis", "file": "material/images/Assets/gegen-nazis.png" } 
+      ,{ "name": "gegen-nazis1", "file": "material/images/Assets/gegen-nazis1.png" } 
+      ,{ "name": "hate facism ", "file": "material/images/Assets/hate facism .png" } 
+      ,{ "name": "hate facism 1", "file": "material/images/Assets/hate facism 1.png" } 
+      ,{ "name": "hate facism 2", "file": "material/images/Assets/hate facism 2.png" } 
+      ,{ "name": "hate facism chalk", "file": "material/images/Assets/hate facism chalk.png" } 
+      ,{ "name": "However blue", "file": "material/images/Assets/However blue.png" } 
+      ,{ "name": "however sans_", "file": "material/images/Assets/however sans_.png" } 
+      ,{ "name": "laut", "file": "material/images/Assets/laut.png" } 
+      ,{ "name": "love skate", "file": "material/images/Assets/love skate.png" } 
+      ,{ "name": "no facist_", "file": "material/images/Assets/no facist_.png" } 
+      ,{ "name": "nonazis", "file": "material/images/Assets/nonazis.png" } 
+      ,{ "name": "omas gegen facists", "file": "material/images/Assets/omas gegen facists.png" } 
+      ,{ "name": "red fist", "file": "material/images/Assets/red fist.png" } 
+      ,{ "name": "skate 2", "file": "material/images/Assets/skate 2.png" } 
+    ] 
+  }, 
+  "Backgrounds": { 
+    "holidays": [ 
+      { "name": "Chrismas2", "file": "material/images/Backgrounds/holidays/Chrismas2.png" } 
+      ,{ "name": "Christmas", "file": "material/images/Backgrounds/holidays/Christmas.png" } 
+      ,{ "name": "easter", "file": "material/images/Backgrounds/holidays/easter.png" } 
+      ,{ "name": "Halloween", "file": "material/images/Backgrounds/holidays/Halloween.png" } 
+      ,{ "name": "Halloween2", "file": "material/images/Backgrounds/holidays/Halloween2.png" } 
+      ,{ "name": "Labor Day", "file": "material/images/Backgrounds/holidays/Labor Day.png" } 
+      ,{ "name": "Labor Day2", "file": "material/images/Backgrounds/holidays/Labor Day2.png" } 
+      ,{ "name": "New Year", "file": "material/images/Backgrounds/holidays/New Year.png" } 
+      ,{ "name": "New Year2", "file": "material/images/Backgrounds/holidays/New Year2.png" } 
+      ,{ "name": "St. Patrick's Day", "file": "material/images/Backgrounds/holidays/St. Patrick's Day.png" } 
+      ,{ "name": "St. Patrick's Day2", "file": "material/images/Backgrounds/holidays/St. Patrick's Day2.png" } 
+      ,{ "name": "Valentine's", "file": "material/images/Backgrounds/holidays/Valentine's.png" } 
+    ] 
+, 
+    "landscape": [ 
+      { "name": "demo", "file": "material/images/Backgrounds/landscape/demo.png" } 
+      ,{ "name": "demo5", "file": "material/images/Backgrounds/landscape/demo5.png" } 
+      ,{ "name": "demo8", "file": "material/images/Backgrounds/landscape/demo8.png" } 
+      ,{ "name": "landscape 01", "file": "material/images/Backgrounds/landscape/landscape 01.png" } 
+      ,{ "name": "landscape 02", "file": "material/images/Backgrounds/landscape/landscape 02.png" } 
+      ,{ "name": "landscape 03", "file": "material/images/Backgrounds/landscape/landscape 03.png" } 
+      ,{ "name": "landscape 04", "file": "material/images/Backgrounds/landscape/landscape 04.png" } 
+      ,{ "name": "landscape 05", "file": "material/images/Backgrounds/landscape/landscape 05.PNG" } 
+      ,{ "name": "landscape 06", "file": "material/images/Backgrounds/landscape/landscape 06.PNG" } 
+      ,{ "name": "landscape 07", "file": "material/images/Backgrounds/landscape/landscape 07.PNG" } 
+      ,{ "name": "landscape 08", "file": "material/images/Backgrounds/landscape/landscape 08.PNG" } 
+      ,{ "name": "landscape 09", "file": "material/images/Backgrounds/landscape/landscape 09.PNG" } 
+      ,{ "name": "landscape 10", "file": "material/images/Backgrounds/landscape/landscape 10.PNG" } 
+      ,{ "name": "landscape 11", "file": "material/images/Backgrounds/landscape/landscape 11.PNG" } 
+      ,{ "name": "landscape 12", "file": "material/images/Backgrounds/landscape/landscape 12.PNG" } 
+      ,{ "name": "landscape 13", "file": "material/images/Backgrounds/landscape/landscape 13.PNG" } 
+      ,{ "name": "landscape 14", "file": "material/images/Backgrounds/landscape/landscape 14.PNG" } 
+    ] 
+, 
+    "portrait": [ 
+      { "name": "demo6", "file": "material/images/Backgrounds/portrait/demo6.png" } 
+      ,{ "name": "demo9", "file": "material/images/Backgrounds/portrait/demo9.png" } 
+      ,{ "name": "portrait 01", "file": "material/images/Backgrounds/portrait/portrait 01.png" } 
+      ,{ "name": "portrait 02", "file": "material/images/Backgrounds/portrait/portrait 02.png" } 
+      ,{ "name": "portrait 03", "file": "material/images/Backgrounds/portrait/portrait 03.png" } 
+      ,{ "name": "portrait 04", "file": "material/images/Backgrounds/portrait/portrait 04.PNG" } 
+      ,{ "name": "portrait 05", "file": "material/images/Backgrounds/portrait/portrait 05.PNG" } 
+      ,{ "name": "portrait 06", "file": "material/images/Backgrounds/portrait/portrait 06.PNG" } 
+      ,{ "name": "portrait 07", "file": "material/images/Backgrounds/portrait/portrait 07.PNG" } 
+      ,{ "name": "portrait 08", "file": "material/images/Backgrounds/portrait/portrait 08.PNG" } 
+      ,{ "name": "portrait 09", "file": "material/images/Backgrounds/portrait/portrait 09.PNG" } 
+      ,{ "name": "portrait 10", "file": "material/images/Backgrounds/portrait/portrait 10.PNG" } 
+      ,{ "name": "portrait 11", "file": "material/images/Backgrounds/portrait/portrait 11.PNG" } 
+      ,{ "name": "portrait 12", "file": "material/images/Backgrounds/portrait/portrait 12.PNG" } 
+      ,{ "name": "portrait 13", "file": "material/images/Backgrounds/portrait/portrait 13.PNG" } 
+    ] 
+, 
+    "square": [ 
+      { "name": "demo2", "file": "material/images/Backgrounds/square/demo2.png" } 
+      ,{ "name": "demo4", "file": "material/images/Backgrounds/square/demo4.png" } 
+      ,{ "name": "demo7", "file": "material/images/Backgrounds/square/demo7.png" } 
+      ,{ "name": "square 01", "file": "material/images/Backgrounds/square/square 01.png" } 
+      ,{ "name": "square 02", "file": "material/images/Backgrounds/square/square 02.jpg" } 
+      ,{ "name": "square 03", "file": "material/images/Backgrounds/square/square 03.png" } 
+      ,{ "name": "square 04", "file": "material/images/Backgrounds/square/square 04.png" } 
+      ,{ "name": "square 05", "file": "material/images/Backgrounds/square/square 05.png" } 
+      ,{ "name": "square 06", "file": "material/images/Backgrounds/square/square 06.png" } 
+      ,{ "name": "square 07", "file": "material/images/Backgrounds/square/square 07.png" } 
+      ,{ "name": "square 08", "file": "material/images/Backgrounds/square/square 08.png" } 
+      ,{ "name": "square 09", "file": "material/images/Backgrounds/square/square 09.png" } 
+      ,{ "name": "square 10", "file": "material/images/Backgrounds/square/square 10.png" } 
+      ,{ "name": "square 11", "file": "material/images/Backgrounds/square/square 11.png" } 
+      ,{ "name": "square 12", "file": "material/images/Backgrounds/square/square 12.png" } 
+    ] 
+, 
+    "universal": [ 
+      { "name": "universal 1", "file": "material/images/Backgrounds/universal/universal 1.png" } 
+      ,{ "name": "universal 2", "file": "material/images/Backgrounds/universal/universal 2.png" } 
+      ,{ "name": "universal 3", "file": "material/images/Backgrounds/universal/universal 3.png" } 
+    ] 
+
+  }, 
+  "Socials": { 
+    "root": [ 
+      { "name": "email", "file": "material/images/Socials/email.png" } 
+      ,{ "name": "email2", "file": "material/images/Socials/email2.png" } 
+      ,{ "name": "call", "file": "material/images/Socials/call2.png" } 
+      ,{ "name": "call2", "file": "material/images/Socials/call.png" } 
+      ,{ "name": "Bandcamp-button-bc-circle-black", "file": "material/images/Socials/Bandcamp-button-bc-circle-black.svg" } 
+      ,{ "name": "Bandcamp-logo", "file": "material/images/Socials/Bandcamp-logotype-color.svg" } 
+      ,{ "name": "Bandcamp-logo 2", "file": "material/images/Socials/Bandcamp-button-bc-circle-black.png" } 
+      ,{ "name": "Facebook_f_logo", "file": "material/images/Socials/Facebook_f_logo_(2021).png" } 
+      ,{ "name": "Facebook_f_logo 2", "file": "material/images/Socials/Facebook_f_logo_(2021).svg" } 
+      ,{ "name": "Facebook_f_logo 3", "file": "material/images/Socials/facebook-5.svg" } 
+      ,{ "name": "Discord logo", "file": "material/images/Socials/Discord logo.svg" } 
+      ,{ "name": "Discord logo2", "file": "material/images/Socials/discord.svg" } 
+      ,{ "name": "Instagram-Glyph-Black-Logo.wine", "file": "material/images/Socials/Instagram-Glyph-Black-Logo.wine.svg" } 
+      ,{ "name": "Instagram-Logo.wine", "file": "material/images/Socials/Instagram-Logo.wine.svg" } 
+      ,{ "name": "Instagram-Wordmark-Black-Logo.wine", "file": "material/images/Socials/Instagram-Wordmark-Black-Logo.wine.svg" } 
+      ,{ "name": "Instagram-Wordmark-Logo.wine", "file": "material/images/Socials/Instagram-Wordmark-Logo.wine.svg" } 
+      ,{ "name": "Ionicons_logo-tiktok", "file": "material/images/Socials/Ionicons_logo-tiktok.svg" }
+      ,{ "name": "TikTok_logo", "file": "material/images/Socials/TikTok_logo.svg" } 
+      ,{ "name": "Signal-Logo2", "file": "material/images/Socials/Signal-Logo.png" }   
+      ,{ "name": "Signal-Logo", "file": "material/images/Socials/Signal_logo_(2020).svg" }
+      ,{ "name": "SoundCloud_-_Logo", "file": "material/images/Socials/SoundCloud_-_Logo.svg" } 
+      ,{ "name": "SoundCloud-Logo.wine", "file": "material/images/Socials/SoundCloud-Logo.wine.svg" } 
+      ,{ "name": "Spotify-Icon-Logo.wine", "file": "material/images/Socials/Spotify-Icon-Logo.wine.svg" } 
+      ,{ "name": "Spotify-Logo.wine", "file": "material/images/Socials/Spotify-Logo.wine.svg" } 
+      ,{ "name": "Telegram", "file": "material/images/Socials/Telegram.png" } 
+      ,{ "name": "Telegram2", "file": "material/images/Socials/Telegram2.png" } 
+      ,{ "name": "WhatsApp", "file": "material/images/Socials/WhatsApp.svg" } 
+      ,{ "name": "Whatsapp", "file": "material/images/Socials/Whatsapp.png" } 
+      ,{ "name": "YouTube-Icon-Full-Color-Logo.wine", "file": "material/images/Socials/YouTube-Icon-Full-Color-Logo.wine.svg" } 
+      ,{ "name": "YouTube-Icon-Full-Color2", "file": "material/images/Socials/YouTube-Icon-Full-Color-Logo.wine.png" } 
+      ,{ "name": "YouTube-White-Full-Color-Logo.wine", "file": "material/images/Socials/YouTube-White-Full-Color-Logo.wine.svg" } 
+      ,{ "name": "YouTube-White-Logo.wine", "file": "material/images/Socials/YouTube-White-Logo.wine.svg" } 
+    ] 
+  }
+}

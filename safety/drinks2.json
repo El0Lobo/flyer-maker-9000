@@ -1,0 +1,67 @@
+{
+  "Getränke & Snacks": {
+    "Alkohol": {
+      "Bier": [
+        {
+          "Name": "Radler",
+          "Variants": [
+            { "Amount": "0.5l", "Price": "3€" },
+            { "Amount": "0.3l", "Price": "2.5€" }
+          ]
+        },
+        {
+          "Name": "Export",
+          "Variants": [
+            { "Amount": "0.5l", "Price": "3€" }
+          ]
+        }
+      ],
+      "Wein & Sekt": [
+        {
+          "Name": "Weinschorle",
+          "Variants": [
+            { "Amount": "0.2l", "Price": "2.5€" },
+            { "Amount": "0.5l", "Price": "5€" }
+          ]
+        }
+      ]
+    },
+    "Softdrinks": [
+      {
+        "Name": "Eistee",
+        "Flavors": ["Pfirsich", "Passion"],
+        "Variants": [
+          { "Amount": "0.3l", "Price": "3€" }
+        ]
+      },
+      {
+        "Name": "Mate",
+        "Variants": [
+          { "Amount": "0.5l", "Price": "2.5€" }
+        ]
+      },
+      {
+        "Name": "Sprudel",
+        "Variants": [
+          { "Amount": "0.2l", "Price": "0.5€" },
+          { "Amount": "0.5l", "Price": "1€" },
+          { "Amount": "0.7l", "Price": "1.5€" }
+        ]
+      }
+    ],
+    "Snacks": [
+      {
+        "Name": "Chips",
+        "Variants": [
+          { "Price": "1€" }
+        ]
+      },
+      {
+        "Name": "Lollis",
+        "Variants": [
+          { "Price": "0.2€" }
+        ]
+      }
+    ]
+  }
+}
