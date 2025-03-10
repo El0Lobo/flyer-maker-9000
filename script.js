@@ -972,8 +972,8 @@ jQuery(document).ready(function ($) {
   });
 
   /****************************************
-   * Edit, Delete, and Layer Control Icons
-   ****************************************/
+ * Edit, Delete, and Layer Control Icons
+ ****************************************/
   // Create and position edit icon for text objects
   let editIcon = document.createElement("div");
   editIcon.innerHTML = "🖊️";
@@ -986,6 +986,7 @@ jQuery(document).ready(function ($) {
   editIcon.style.zIndex = "1000";
   editIcon.style.left = "59%";
   editIcon.style.top = "8%";
+  editIcon.style.textShadow = "2px 2px 4px black";
   document.body.appendChild(editIcon);
 
   function showEditIcon(target) {
@@ -1001,6 +1002,19 @@ jQuery(document).ready(function ($) {
         selectedObjects[0].type === "text")
     ) {
       showEditIcon(selectedObjects[0]);
+    } else {
+      editIcon.style.display = "none";
+    }
+  });
+
+  // Updated: Only show the edit icon if the active object is a text object
+  canvas.on("object:selected", function () {
+    const activeObject = canvas.getActiveObject();
+    if (
+      activeObject &&
+      (activeObject.type === "textbox" || activeObject.type === "text")
+    ) {
+      showEditIcon(activeObject);
     } else {
       editIcon.style.display = "none";
     }
@@ -1055,16 +1069,6 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  canvas.on("object:selected", function () {
-    const activeObject = canvas.getActiveObject();
-    if (
-      activeObject &&
-      (activeObject.type === "textbox" || activeObject.type === "text")
-    ) {
-      showEditIcon(activeObject);
-    }
-  });
-
   // Delete, Move Up, Move Down, and Lock icons
   let deleteIcon = document.createElement("div");
   deleteIcon.innerHTML = "🗑️";
@@ -1075,6 +1079,7 @@ jQuery(document).ready(function ($) {
   deleteIcon.style.cursor = "pointer";
   deleteIcon.style.display = "none";
   deleteIcon.style.zIndex = "1000";
+  deleteIcon.style.textShadow = "2px 2px 4px black";
   document.body.appendChild(deleteIcon);
 
   let moveUpIcon = document.createElement("div");
@@ -1086,6 +1091,7 @@ jQuery(document).ready(function ($) {
   moveUpIcon.style.cursor = "pointer";
   moveUpIcon.style.display = "none";
   moveUpIcon.style.zIndex = "1000";
+  moveUpIcon.style.textShadow = "2px 2px 4px black";
   document.body.appendChild(moveUpIcon);
 
   let moveDownIcon = document.createElement("div");
@@ -1097,6 +1103,7 @@ jQuery(document).ready(function ($) {
   moveDownIcon.style.cursor = "pointer";
   moveDownIcon.style.display = "none";
   moveDownIcon.style.zIndex = "1000";
+  moveDownIcon.style.textShadow = "2px 2px 4px black";
   document.body.appendChild(moveDownIcon);
 
   let lockIcon = document.createElement("div");
@@ -1108,9 +1115,41 @@ jQuery(document).ready(function ($) {
   lockIcon.style.cursor = "pointer";
   lockIcon.style.display = "none";
   lockIcon.style.zIndex = "1000";
+  lockIcon.style.textShadow = "2px 2px 4px black";
   document.body.appendChild(lockIcon);
 
-  // Position icons near each other
+  // NEW: Create a Clear Canvas icon that will clear all objects when clicked
+  let clearCanvasIcon = document.createElement("div");
+  clearCanvasIcon.innerHTML = "Clear Canvas"; // or use an icon like "🧹" if you prefer
+  clearCanvasIcon.style.position = "fixed";
+  clearCanvasIcon.style.fontSize = "16px";
+  clearCanvasIcon.style.cursor = "pointer";
+  clearCanvasIcon.style.zIndex = "1000";
+  clearCanvasIcon.style.right = "10px";
+  clearCanvasIcon.style.top = "10px";
+  clearCanvasIcon.style.backgroundColor = "red";
+  clearCanvasIcon.style.borderRadius = "15%";
+  clearCanvasIcon.style.padding = "5px";
+  document.body.appendChild(clearCanvasIcon);
+
+  clearCanvasIcon.addEventListener("click", function () {
+    // Clear all objects from the canvas
+    canvas.clear();
+  
+    // Reinitialize the background with an image
+    fabric.Image.fromURL("material/images/Backgrounds/universal/universal 3.png", function(img) {
+      // Adjust the image size to match the canvas dimensions
+      canvas.setBackgroundImage(img, canvas.renderAll.bind(canvas), {
+        scaleX: canvas.width / img.width,
+        scaleY: canvas.height / img.height
+      });
+    });
+  
+    // Hide any active icons
+    hideIcons();
+  });
+  
+
   function positionIcons(target) {
     if (!target || !target.oCoords) return;
     deleteIcon.style.left = "63%";
@@ -1245,6 +1284,7 @@ jQuery(document).ready(function ($) {
       ? "Stop drawing"
       : "Start drawing";
   });
+
 
   /****************************************
    * Save and Load User Placements
